@@ -18,4 +18,6 @@ https://github.com/PawlowskiFlo/C3P/blob/main/week2/DieHandle.class.st
 Pour m'entrainer je vais donc pouvoir appliquer le double dispatch sur mon kata. 
 En fait dans les classe de type Piece les méthodes renderPieceOn appliquent déjà du dispatch en laissant la possibilité au Square de choisir la méthode qu'il souhaite utiliser. Pour retirer les blocks conditionnels dans les méthodes render de la classe Square je pense créer 2 sous classes BlackSquare et WhiteSquare, comme ça chaque classe connait déjà sa couleur et plus besoin de tester cette condition dans les méthodes render, cette implémentation me fait penser à la hiérarchie qu'on a vu dans le premier DS de pharo sur l'exercice du Train (le transport prend un passager en paramètre et le passager décide de la méthode de paiement à appliquer en fonction du type du paramètre). 
 
+Ce qui m'embête un peu c'est que mes tests ne passeront plus si je change ça. Mais c'est normal que les set up des tests doivent changer, je ne vais plus créer des square et leur attribuer une couleur mais créer directement des WhiteSquare ou des BlackSquare. En soit les assert ne vont pas changer mais seuleument les set up. 
+
 
