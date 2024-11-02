@@ -1,5 +1,5 @@
-Group 13: Week 7 report  
-SOLEIMANI 	SEPIDEH
+## Group 13: Week 7 report  
+## SOLEIMANI 	SEPIDEH
 
 I started to learn double dispatch and how it is supposed to be implemented in Pharo. I even understood where and when the double dispatch is meant to be implemented.
 Such a great solution in cases where there are so many ifTrue and ifFalse.
