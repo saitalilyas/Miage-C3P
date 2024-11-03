@@ -58,7 +58,7 @@ resetEnPassantFlags
     | allPawns |
     allPawns := board pieces select: [ :piece | piece id = 'P' ].
     allPawns do: [ :pawn | pawn canBeCapturedEnPassant: false ].```
- ```   
+   
  But de la fonction :
 
 Assurer que, après chaque mouvement, aucun pion sur le plateau n'est indûment marqué comme pouvant être capturé en passant.
@@ -99,6 +99,7 @@ Cette réinitialisation est nécessaire car, selon les règles des échecs, un p
 	].
 	
 	movesLabel text: movesText]```
+
 Enregistrement du mouvement :
 Garde une trace des mouvements effectués pour l'historique de la partie.
 Gestion du mouvement "en passant" :
