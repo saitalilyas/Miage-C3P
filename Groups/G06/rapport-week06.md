@@ -15,7 +15,9 @@ Rock>>vs: anelement
  ^ anelement playagainstRock.
 Scissors>>vs: anelement
  ^ anelement playagainstScissors.
-
+```
+au main de playground :
+```
  `|sc roc paper|
 sc := Scissors new.
 roc := Rock new.
@@ -23,15 +25,32 @@ paper :=Paper new.
 Transcript show: (roc vs: paper ).```
 aprés dans chaque classe on personnaliser les methode :
 ```
+dans la classe paper
+```
 playagainstScissors 
 ^ #scissors
 playagainstPaper 
  #nulle 
+playagainstRock 
+ #paper ```
+dans la classe rock
+```
+playagainstScissors 
+^ #rock
 playagainstPaper 
+ #paper 
+playagainstRock 
  #nulle ```
+ dans la classe scissors
+```
+playagainstScissors 
+^ #nulle
+playagainstPaper 
+ #scissors 
+playagainstRock 
+ #rock ```
 ## avancement Kata 
-je suis en trains d'implementer l'en passant move mais je trouve toujours des difficulté 
-j'ai essayer de initialiser la possibilité d'etre capturé en passant à faux 
+implementation de deux methode clé :
 ```
 resetEnPassantFlags
     "Réinitialise le drapeau canBeCapturedEnPassant pour tous les pions"
@@ -45,7 +64,7 @@ resetEnPassantFlags
 Assurer que, après chaque mouvement, aucun pion sur le plateau n'est indûment marqué comme pouvant être capturé en passant.
 Cette réinitialisation est nécessaire car, selon les règles des échecs, un pion n'est vulnérable à la capture en passant que immédiatement après avoir effectué un double pas.
 
-recordMovementOf: aPiece to: aSquare [
+```recordMovementOf: aPiece to: aSquare [
 	"moves add: (MyMove piece: aPiece square: aSquare name)."
 
 	| prefix movesText moveDistance startSquare | 
@@ -57,7 +76,6 @@ recordMovementOf: aPiece to: aSquare [
 		          ifFalse: [ '' ].
 	moves add: prefix , ' ' , aPiece id , aSquare name.
 	self  resetEnPassantFlags . 
-	"Si la pièce est un pion, vérifier s'il a bougé de deux cases"
    (aPiece id = 'P') ifTrue: [
         moveDistance := (startSquare y - aSquare y) abs.
         (aPiece isInInitialPosition and: [ moveDistance = 2 ])
@@ -80,8 +98,7 @@ recordMovementOf: aPiece to: aSquare [
 		stream nextPutAll: currentLine
 	].
 	
-	movesLabel text: movesText
-]```
+	movesLabel text: movesText]```
 Enregistrement du mouvement :
 Garde une trace des mouvements effectués pour l'historique de la partie.
 Gestion du mouvement "en passant" :
