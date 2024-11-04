@@ -69,3 +69,11 @@ il faudra verifier si la piece a fait une seule deplacement par 2 square du coup
 - Pour cette semiane, j'ai essayé de chercher le design pattern hook et template méthode dans le project des echecs, sans surprise y a eu quelques utilisations de ce design pattern, par exemple la méthode ``` targetSquareLegal ```  qui a été redéfinie dans les sous classes de la classe ```MyPiece```, En effet on a redifini son code dans les classe ```MyBishop```, ```MyKing```, ```MyQueen``` ... .  
 - 
 - J'ai aussi préparé le prochain Design Pattern Visitor , en effet j'ai deja utilisé ce design pattern en Java l'annee derniere  l'interet de ce design pattern est de définir une nouvelle opération sans changer les classes des éléments sur lesquels on opère. Il est souvent utilisé pour traverser une structure d'objets complexe. 
+
+
+# Karim EL JISR
+
+The "Hooks and Template" course covers essential patterns in object-oriented programming, focusing on how template methods define a fixed operation structure while allowing customization through hooks. 
+Template methods, such as Object>>copy, outline the process, with hooks like postCopy for subclass-specific behavior. 
+Hooks may have default implementations but can be refined or overridden, as seen in examples like printOn: for string representation, refined by classes like Delay and Interval. 
+The key principle is that message sending represents choices, and self-sends act as hooks, facilitating flexible and reusable code design in Pharo.

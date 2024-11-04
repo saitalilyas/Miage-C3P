@@ -98,7 +98,8 @@ Cette réinitialisation est nécessaire car, selon les règles des échecs, un p
 		stream nextPutAll: currentLine
 	].
 	
-	movesLabel text: movesText]```
+	movesLabel text: movesText]
+```
 
 Enregistrement du mouvement :
 Garde une trace des mouvements effectués pour l'historique de la partie.
@@ -108,3 +109,20 @@ Mise à jour de l'affichage :
 Met à jour l'interface utilisateur pour refléter les mouvements récents.
 
 jusqu'a maintenant la fonctionnalité en pasant ne fonctionne pas ,je suis en trains de deboguer pour savoir le probléme vient d'ou
+
+
+# Karim EL JISR
+
+The course on Double Dispatch and the Visitor Design Pattern introduces a crucial concept for resolving method selection when the outcome depends on the runtime type of two objects, rather than just the receiver. This pattern avoids the use of conditionals by leveraging polymorphism to handle interactions cleanly and flexibly. The Rock-Paper-Scissors example illustrates this: each class (Stone, Paper, Scissors) implements a vs: method that sends a second message to the argument, such as playAgainstStone, enabling the right behavior to be dynamically selected.
+
+Key Elements:
+
+	•	Double Dispatch: The mechanism uses two method calls. The first determines the receiver, and the second call on the argument selects the appropriate behavior.
+	•	Avoiding Conditionals: The solution relies entirely on message sending, making choices using method dispatch rather than explicit checks.
+	•	Example Implementation:
+	•	Stone>>vs: dispatches to the method playAgainstStone on the argument.
+	•	Each class defines methods like playAgainstStone, playAgainstPaper, and playAgainstScissors to determine the result.
+
+
+The *Visitor Design Pattern* utilizes double dispatch to separate algorithms from the objects they operate on, enabling the addition of new operations without altering existing object structures. This is achieved by having elements accept a "visitor" and call the appropriate method on the visitor, leveraging double dispatch to ensure the correct operation is executed based on the element and visitor types. This pattern enhances modularity, adhering to the Open/Closed Principle by allowing easy addition of new operations while keeping the code maintainable and flexible. It is particularly useful for traversing complex structures like trees, where operations can vary depending on the type of element encountered.
+
