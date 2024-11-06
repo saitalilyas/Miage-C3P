@@ -3,7 +3,11 @@
 ****
 # KHADIJA BESBAS 
 
+* travaillé sur  mon kata
+* expliquer à d'autres élèves certains kata
+* lu les slides ( visitor )
 
+* 
 ****
 # Cyril Godet
 
