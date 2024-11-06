@@ -126,3 +126,24 @@ Key Elements:
 
 The *Visitor Design Pattern* utilizes double dispatch to separate algorithms from the objects they operate on, enabling the addition of new operations without altering existing object structures. This is achieved by having elements accept a "visitor" and call the appropriate method on the visitor, leveraging double dispatch to ensure the correct operation is executed based on the element and visitor types. This pattern enhances modularity, adhering to the Open/Closed Principle by allowing easy addition of new operations while keeping the code maintainable and flexible. It is particularly useful for traversing complex structures like trees, where operations can vary depending on the type of element encountered.
 
+
+# MOULOUEL Tarik 
+
+## DOUBLE DISPATCH : 
+ - Pour cette semaine, j'ai lu le document sur le double dispatch, j'ai pu comprendre que double dispatch est un concept en programmation orientee objet qui permet de sélectionner la méthode à exécuter en fonction de deux objets, au lieu d'un seul comme dans le simple dispatch. Il est utilisé dans des situations où le comportement dépend de l'interaction entre deux objets de types différents comme lo montre l'exemple du slide,Ona  Classe abstraite SPSElement : Elle définit des méthodes de base comme playAgainstScissors, playAgainstStone, et playAgainstPaper. Ces méthodes permettent d'implémenter le double dispatch en définissant des comportements différents pour chaque interaction entre les éléments.
+
+Classes concrètes Stone, Paper, et Scissors : Ces classes héritent de SPSElement et implémentent les méthodes playAgainstScissors, playAgainstStone, et playAgainstPaper, pour gérer les interactions spécifiques.
+
+    Par exemple, dans la classe Stone, la méthode playAgainstScissors pourrait définir la logique où "Pierre" bat "Ciseaux", tandis que playAgainstPaper indiquerait que "Pierre" est battue par "Papier".
+
+ - Lorsqu'un élément, par exemple Stone, est comparé à un autre (par exemple Paper), Stone appelle une méthode générique vs: anElement.
+anElement est ensuite envoyé à la méthode spécifique playAgainstStone, playAgainstPaper, ou playAgainstScissors, selon son type.
+Cela permet de déterminer l'issue du jeu (victoire, défaite, ou égalité) en fonction des types d'objets en interaction, sans recourir à des structures conditionnelles complexes. 
+
+ - L'avantage du double dispatch est le fait que chaque classe gère ses propres interactions, rendant le code plus modulaire et plus lisible.  
+
+ ## VISITOR : 
+
+  - Pour ce design Pattern, j'ai lu le slide du cours pour comprendre un peu plus sur ce design pattern et son utilité, J'ai compris que  Double Dispatch est le mécanisme central du pattern Visitor. Il permet de choisir dynamiquement la méthode appropriée en fonction des types de l'objet de domaine et du visiteur, sans avoir besoin de vérifications conditionnelles.
+  - Le design pattern Visitor est un patron de conception comportemental qui permet de séparer une opération d'une structure d'objets sur laquelle elle s'applique. Ce pattern est particulièrement utile lorsque l'on veut ajouter de nouvelles fonctionnalités à une structure d'objets sans modifier les classes de cette structure. 
+  - Le pattern Visitor est particulièrement utile lorsque vous devez effectuer plusieurs opérations sur une structure d’objets organisée, il peut s'averer compliqué d'utiliser le DP visitor quand il y a une volution des éléments de la structure ou dans les langages typés statiquement come java ou C++.
