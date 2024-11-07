@@ -12,3 +12,28 @@ Eventhough I thoroughly studied the theoretical aspects and reviewed practical e
 Observations and Next Steps
 
 This exploration allowed me to grasp the fundamental mechanics of the Visitor pattern in Pharo, including the advantages it offers in terms of extending functionalities without modifying original classes By contrast, I believe I still miss on some hands-on approach to better understand how it works, which I plan to do whils resolving the exercises next class.
+
+# Week 6 Report - TITOUCHE Salim
+
+## Double Dispatch Study
+This week, we explored double dispatch, a fundamental technique in Pharo that leverages the message system to dynamically select appropriate methods based on the types of objects involved. This approach is particularly elegant in Pharo as it integrates naturally with the language's message system.
+
+## Objectives and Review
+I deepened my understanding of double dispatch in Pharo, focusing on:
+
+- Specific syntax requirements
+- Language naming conventions
+- Practical applications for upcoming evaluations
+
+## Exercises Completed
+I completed exercises related to:
+
+- Die/DieHandle implementation
+- Paper Scissors Stone game
+
+## Chess Game Progress
+During this week, I resolved the issues mentioned in Report 5 and implemented the corresponding tests.
+
+## Related Code Links
+- [Dice implementation](https://github.com/salim2607/MyCounter/tree/master/src/Dice)
+- [Chess game](https://github.com/mrdedede/Chess)
