@@ -29,3 +29,7 @@ C'est donc dans la méthode play de la classe MyPlayer que j'ai decidé d'intég
 ****
 
 # BOU ALEXANDRE
+
+Cette semaine :
+- J'ai travaillé sur mon kata
+- Lu les slides
