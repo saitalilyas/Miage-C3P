@@ -53,28 +53,3 @@ Cet exercice m'a permis d'approfondir la logique de double dispatch en implémen
   J'ai étudié des exemples et les avantages du Visitor dans les systèmes nécessitant des opérations variées sur des structures complexes.
 
 Ce travail sur le double dispatch et le pattern Visitor enrichit ma compréhension des concepts avancés en conception orientée objet et prépare le terrain pour les prochains exercices.
-
-# Week 6 Report - TITOUCHE Salim
-
-## Double Dispatch Study
-This week, we explored double dispatch, a fundamental technique in Pharo that leverages the message system to dynamically select appropriate methods based on the types of objects involved. This approach is particularly elegant in Pharo as it integrates naturally with the language's message system.
-
-## Objectives and Review
-I deepened my understanding of double dispatch in Pharo, focusing on:
-
-- Specific syntax requirements
-- Language naming conventions
-- Practical applications for upcoming evaluations
-
-## Exercises Completed
-I completed exercises related to:
-
-- Die/DieHandle implementation
-- Paper Scissors Stone game
-
-## Chess Game Progress
-During this week, I resolved the issues mentioned in Report 5 and implemented the corresponding tests.
-
-## Related Code Links
-- [Dice implementation](https://github.com/salim2607/MyCounter/tree/master/src/Dice)
-- [Chess game](https://github.com/mrdedede/Chess)
