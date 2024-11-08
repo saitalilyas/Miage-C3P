@@ -10,6 +10,8 @@ This week you must
 
 Check the PDFs, watch the videos.
 
-The lectures on Inheritance: Module 5 from https://advanced-design-mooc.pharo.org/#module5
+The lectures on Inheritance: 
 
-- Delegation vs. Inheritance
+- Delegation vs. Inheritance from Module 5 Module 5 https://advanced-design-mooc.pharo.org/#module5
+- Coupling Law of Demeter from Module 9 from https://advanced-design-mooc.pharo.org/#module9
+  
