@@ -10,8 +10,8 @@
 - 07 Week: 24-25 **Module 6:** Double dispatch (Gabriel)
 - Break 31-1 Nov
 - 08 Week 07-08 Nov **Modules 7 and 8:** Composite + Visitor
-- 09 Week 14-15 Nov "Explain your design"
-- 10 Week 21-22 Nov **Module 9:** Inheritance
+- 09 Week 14-15 Nov **Module 9:** Inheritance
+- 10 Week 21-22 Nov "Explain your design"
 - 11 Week 28-29 Dec Practice
 - 12 Week 05-06 Dec **Module 10:** Types (Guille jeudi et vendredi)
 - Examen le 13 Dec de 9h à 12h (amphi à confirmer).
