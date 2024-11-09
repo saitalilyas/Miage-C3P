@@ -1,36 +1,34 @@
+### Evann Lietard
+#### Kata
+La version 1 de mon kata est maintenant fonctionnelle. Toutes les méthodes principales ont été implémentées, et elles permettent d'exécuter les opérations de base du projet. Cependant, il reste encore plusieurs aspects à améliorer. D'une part, un refactoring est nécessaire pour rendre certaines méthodes plus efficaces et lisibles. D'autre part, bien que des tests de base aient toujours été effectués, les tests plus poussés doivent encore être développés pour assurer une couverture complète et détecter d'éventuels bugs.
+
+Par la suite, je prévois également d'implémenter une version automatisée qui ne nécessitera pas d'intervention humaine pour certains choix
+L'avancement du Kata peur etre vu içi: https://github.com/EvannLietard/Chess/tree/PawnPromotion
+
 ### PAWLOWSKI Florine 
 
-#### exercices 
+#### Exercices 
 
-En cherchant dans la classe MyPiece j'ai trouvé la méthode targetSquares qui fait appel à la méthode targetSQuaresLegal: , 
-qui est implémentée dans MyPiece mais aussi dans les subclasses MyKing, MyKnight, MyRook etc. C'est donc bien une template méthode 
+J'avais déjà fait l'exercice Die & Die Handle lors de la semaine où nous avons découvert le dispatch (je ne savais pas que c'était du double Dispatch à ce moment là) 
 
-### kata 
+https://github.com/PawlowskiFlo/Miage23/blob/2024/Groups/G04/report_week02.md
 
-Pour mon kata (rendering, double dispatch) j'ai ajouté des tests en plus sur la classe MyChessSquare mais je ne comprends pas pourquoi plus je fais de tests moins j'ai de coverage ? J'ai rajouté 5 ou 6 tests et je suis passée de 48% à 25% de coverage ? 
+https://github.com/PawlowskiFlo/C3P/blob/main/week2/DieHandle.class.st
 
-https://github.com/EvannLietard/Chess/blob/refactor_piece_rendering/src/Myg-Chess-Tests/MyChessSquareTest.class.st
+Pour m'entrainer je vais donc pouvoir appliquer le double dispatch sur mon kata. 
+En fait dans les classe de type Piece les méthodes renderPieceOn appliquent déjà du dispatch en laissant la possibilité au Square de choisir la méthode qu'il souhaite utiliser. Pour retirer les blocks conditionnels dans les méthodes render de la classe Square je pense créer 2 sous classes BlackSquare et WhiteSquare, comme ça chaque classe connait déjà sa couleur et plus besoin de tester cette condition dans les méthodes render, cette implémentation me fait penser à la hiérarchie qu'on a vu dans le premier DS de pharo sur l'exercice du Train (le transport prend un passager en paramètre et le passager décide de la méthode de paiement à appliquer en fonction du type du paramètre). 
 
-Pour le kata je pensais à créer des classes de pions noirs et de pions blancs mais je trouve que ça va dupliquer énormement les méthodes alors je vais encore y réflechir. Peut être déjà passer la case en case noire ou case blanche pour éliminer un premier block conditionnel dans les méthodes render. 
+Ce qui m'embête un peu c'est que mes tests ne passeront plus si je change ça. Mais c'est normal que les set up des tests doivent changer, je ne vais plus créer des square et leur attribuer une couleur mais créer directement des WhiteSquare ou des BlackSquare. En soit les assert ne vont pas changer mais seuleument les set up. 
 
-J'ai vu que le week07 portait sur le doubleDispatch ! ça va m'aider sur l'implémentation de la solution pour le kata :) 
+#### KATA 
 
-### Homeworks 
+https://github.com/EvannLietard/Chess/tree/refactor_piece_rendering/src
 
-Le design pattern Visitor : 
+j'ai créé mes 2 sous classes MyWhiteChessSquare et MyBlackChessSquare. J'ai changé tous mes set up dans les tests que j'avais fait avant de faire du refactoring pour appliquer le double dispatch. Mes tests sont tous verts de nouveau. (sauf un test qui était basé sur la couleur que j'ai retiré puisque j'ai retiré la variable d'instance #color de MyChessSquare qui ne sert plus à rien avec l'implémentation des deux sous classes). 
 
-Il est utilisé pour effectuer différentes opérations sur une structure d'objets complexe mais sans modifier la classe de ces objets. Il éxecute une opération spécifique sur chaque élément d'une structure. 
-Il fonctionne très bien avec le design Composite. 
+On aurait pu faire la même chose avec les pièces, séparer en 2 sous classes de pièces : blanches et noires, mais je trouve que ce n'est pas forcément utile, on aurait beaucoup trop de classes et de méthodes à réécrire. Par exemple au lieu d'avoir une seule méthode renderBishop dans MyWhiteChessSquare on en aurait 2 en fonction du type de pièce passé (si la pièce est blanche ou noire). Si on regarde un peu plus loin dans l'évolution du projet et qu'on souhaite ajouter d'autres couleurs ce modèle ne serait plus du tout intéressant puisque beaucoup trop complexe. 
 
-Fonctionnement : 
-Les objets de la structure acceptent un visiteur avec une méthode acceptVisitor: aVisitor et cette méthode délègue l'opération à l'objet Visitor. 
-Chaque classe qui fait partie de la structure implémente sa propre version de acceptVisitor et appelle la bonne méthode du Visitor. 
-Le visitor utilise le mécanisme du DOUBLE DISPATCH, ce qui veut dire que l'opération est éxecutée en fonction du type du visteur et du type de l'élément de la structure. 
+J'ai laissé plusieurs méthodes abstraites dans la classe MyChessSquare pour laisser d'autres implémentations possibles si par exemple on se retrouve avec un MyPinkChessSquare, la classe mère MyChessSquare impose la réécriture de ces méthodes abstraites et donc on garde le comportement 
 
-Pours : 
-  - Modularité et extensibilité, il permet de rajouter des opérations sans modifier les classes.
-  - Découplage entre structure et opérations.
-Contres :
-  - Pas facile à comprendre avec le double dispatch
-  - moins adapté si la structure change souvent il faudrait changer tous les visiteurs. 
-  
+
+
