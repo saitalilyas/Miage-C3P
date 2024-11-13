@@ -22,3 +22,7 @@ Cette semaine, j'ai :
 ****
 
 # BOU ALEXANDRE
+
+Cette semaine, j'ai:
+* Travaillé sur mon kata
+* Lu les slides
