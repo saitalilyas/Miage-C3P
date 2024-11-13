@@ -3,6 +3,11 @@
 ****
 # KHADIJA BESBAS 
 
+Cette semaine j'ai :
+* travaillé sur mon kata et le kata 2
+* réfléchis à mettre un desing pattern ( state )
+* lu les slide
+
 
 ****
 # Cyril Godet
