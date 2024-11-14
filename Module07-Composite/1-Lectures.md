@@ -10,6 +10,7 @@ This week you must
 
 Check the PDFs, watch the videos.
 
-The lectures on Inheritance: Module 5 from https://advanced-design-mooc.pharo.org/#module5
+The lectures on composite: Module 5 from https://advanced-design-mooc.pharo.org/#module5
 
-- Delegation vs. Inheritance
+- Composite: a Nice and Common Design Pattern
+- Avoid Null Checks
