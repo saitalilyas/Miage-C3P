@@ -1,4 +1,6 @@
-# Rapport Hebdomadaire Semaine 7 de Salas Merzouk
+# Rapport Hebdomadaire Semaine 7
+
+# - Salas Merzouk
 
 Cette semaine, j'ai poursuivi mon travail sur mon kata (remove NIL checks). Mon objectif était de traiter le défi suivant : "Something similar happens when a pieces wants to move outside of the board, can you find it and fix it?"
 
@@ -27,3 +29,19 @@ J'ai poussé toutes les modifications sur mon dépôt GitHub.
 
 ## Chapitre 11
 J'ai également commencé à travailler sur le chapitre 11. Les premières étapes  et je prévois d'avancer davantage cette semaine.
+
+# - André Filho
+
+Pour cette semaine, j'ai commencer à implementer la solution finale de mon kata, en utilisant le model du visitor pour faire la fonction de regarder les pièces qui menacent le roi et lui donner une meilleur notion de comment faire les mouvements sans se metre dans une position menacée
+
+Du coup, l'idee c'est de vérifier toutes les pièces qui sont de la couleur opposée, prendre ses mouvements autorisées et les enlever de la liste de mouvements permis par le roi.
+
+## Law of Demeter
+
+De la côté des études pour le prochain cours, j'ai memorisé la loi de demeter et ses applications et comment elle peut nous aider à avoir une meilleure organization des envois de message dans nos codes.
+
+## Delegation vs Inheritance
+
+Inheritance helps us keep some track of static methods, although it could also lead to more static designs, leading it to be hard to change dynamically. Whilst using delegation and double-dispatch techniques, you can modularize every functionality a bit better for what suits their needs, although it also means that the delegated class needs to have access to the data from the delegator.
+
+In the end, there is not golden-rule or perfect approach, but both these techniques are useful for solving different kinds of problems.
