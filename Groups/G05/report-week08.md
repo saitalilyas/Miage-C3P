@@ -2,7 +2,10 @@
 
 ****
 # KHADIJA BESBAS 
-
+Cette semaine, j'ai :
+* avancée sur mon kata ( reflexion sur des corrections de bug et ajout de design pattern
+* reflexion sur le kata 3 ( promotion d'un pion )
+* aidé d'autre élève sur leurs katas.
 
 ****
 # Cyril Godet
