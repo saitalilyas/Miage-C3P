@@ -26,3 +26,7 @@ Cette semaine, j'ai :
 ****
 
 # BOU ALEXANDRE
+
+Cette semaine :
+- J'ai continué mon kata
+- J'ai relue les pdf des 2 premières semaines.
