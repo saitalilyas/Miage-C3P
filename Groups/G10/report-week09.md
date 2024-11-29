@@ -2,6 +2,10 @@
 
 ## Elsa Logier
 
+Après la présentation, j'ai revu mon code et travaillé un peu sur mon kata en améliorant mon "en passant"
+
+Je n'ai pas eu beaucoup de temps pour travailler sur mon Kata ou les lectures de pharo cette semaine à cause de problèmes personnels, je ne peux donc pas détailler beaucoup mon rapport.
+Je compte prendre une demi heure avant le cours de ce venredi pour faire les lectures de cette semaine et apprendre de nouvelles choses.
 
 
 ## Aymeric Jakobowski
