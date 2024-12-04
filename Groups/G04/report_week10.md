@@ -20,3 +20,18 @@ Le type dynamique offre plus de liberté, mais cela peut rendre les erreurs plus
 J'ai essayé de transmettre l'information du joueur directement aux pièces au lieu de la rechercher à chaque fois dans la classe Game.
 Cependant, j'ai rencontré un problème : je n'arrive pas à initialiser cette information lors de la création des pièces, car elles sont toujours nulles.
 Le problème semble venir du fait que la méthode où j'ai intégré ce comportement n'est tout simplement jamais appelée.
+
+
+## PAWLOWSKI Florine 
+
+### cours 
+
+J'ai lu le cours sur la différence entre le type dynamique et le type statique d'une variable. J'ai plutôt bien compris avec les exemples : 
+B b = new B(); A a = b;
+a.m(a);
+a.m(b);
+b.m(a);
+b.m(b);
+Où il fallait comprendre quelle méthode allait être appelée réellement, c'était très clair.
+
+Le deuxième cours est sur les interfaces. Elles sont très intéressantes pour créer des sous-types sans forcément utiliser des hiérarchies de classe. un objet peut implémenter plusieurs interfaces.
