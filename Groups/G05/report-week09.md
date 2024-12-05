@@ -2,6 +2,10 @@
 
 ****
 # KHADIJA BESBAS 
+- Avancé sur mon kata :
+  J'ai des bugs que je n'avais pas constaté avant ( par exemple le faite que le pion puisse faire la prise en passant plusieurs tour après. )
+  Je cherchais à savoir comment régler ce problème.
+  De plus, j'ai essayé aussi de refactorisé mon code en utilisant des design pattern.
 
 ****
 # Cyril Godet
