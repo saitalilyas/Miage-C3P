@@ -1,0 +1,6 @@
+# Karim EL JISR 
+
+## Polymorphisme, Évolution Logicielle et Recherche de Méthodes
+Le polymorphisme est essentiel pour permettre l'évolution logicielle en rendant les objets interchangeables sans modifier le code existant. En langages dynamiquement typés, comme Pharo, le "duck typing" permet cette flexibilité naturellement : un objet peut jouer un rôle s’il comprend les méthodes nécessaires. Dans les langages statiquement typés, comme Java, les interfaces offrent une solution en définissant des contrats indépendants des hiérarchies de classes, facilitant l’ajout de nouvelles fonctionnalités sans altérer les structures existantes.
+
+La recherche de méthodes repose sur le type dynamique d’un objet. Lorsqu’un message est envoyé, le système identifie la classe de l’objet, puis remonte sa hiérarchie pour trouver la méthode correspondante. Ce mécanisme garantit flexibilité et modularité, surtout dans un contexte polymorphe, en alignant le comportement avec le type réel de l’objet et non son type déclaré. En somme, le polymorphisme et la recherche de méthodes sont des outils clés pour concevoir des systèmes évolutifs et robustes.
