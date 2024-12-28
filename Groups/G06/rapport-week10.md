@@ -17,11 +17,12 @@ Les types ne sont vérifiés qu’à l’exécution. Concrètement, une variable
 
 - Le patron de conception Adapter illustre très bien le principe du polymorphisme : en créant un adaptateur qui fait le lien entre une classe existante et une interface cible, on rend les deux compatibles sans modifier la classe initiale. Cela montre comment on peut exploiter le polymorphisme pour adapter des composants hétérogènes, tout en maintenant une structure claire et évolutive.
 # Mohamed yassine aloui section
-## TYPAGES S 
+## TYPAGES 
 Dans un langage à typage statique, les types sont vérifiés à la compilation ; dans un langage à typage dynamique, ils le sont à l’exécution.
 Le polymorphisme permet d’appeler la même méthode sur différents types d’objets, favorisant ainsi l’évolution logicielle sans réécriture massive.
 Le patron Adapter illustre cette flexibilité en rendant compatibles des composants hétérogènes, sans modifier la classe initiale.
 #avancement de kata fix pawn moves
+## j'ai implémenté tpus les fonctionnalité de mypawn à part la fonctionnalité d'enpassant 
 ## Méthode resetEnPassantFlags
 
 ```resetEnPassantFlags
