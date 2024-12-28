@@ -40,3 +40,5 @@ L’état, représenté par les attributs ou les champs de la classe, est consid
 
 Héritage du comportement dynamique :
 Le comportement, quant à lui, se réfère aux méthodes et fonctions de la classe. L’héritage de comportement est qualifié de « dynamique » parce que l’exécution d’une méthode (redéfinie ou non) est résolue à l’exécution grâce au mécanisme de liaison tardive (dynamic dispatch). Cela permet de déterminer automatiquement la bonne méthode à appeler selon le type effectif de l’objet en mémoire (polymorphisme).
+## Mohamed Yassine Aloui
+La délégation et l’héritage offrent deux approches distinctes pour structurer le code : l’héritage s’appuie sur des relations statiques (sous-classes qui héritent ou redéfinissent l’état et le comportement de la superclasse), tandis que la délégation repose sur la coopération dynamique d’objets (design pattern Strategy, par exemple) pour davantage de modularité.
