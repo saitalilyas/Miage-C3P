@@ -3,12 +3,45 @@
 ****
 # KHADIJA BESBAS 
 
-* travaillé sur  mon kata
-* expliquer à d'autres élèves certains kata
-* lu les slides ( visitor )
+### Homework
 
-* 
+Durant cette semaine j'ai continué à travailler sur mon kata.  J'ai bien avancé sur la partie "fonctionnel". Le pion qui peut effectuer la prise en passant à maintenant la bonne case qui peut être ciblé. Néanmoins, il me reste un problème à régler : 
+
+<table border="1">
+  <tr>
+    <td style="width: 100px; height: 100px;"></td>
+    <td style="width: 100px; height: 100px; text-align: center;"></td>
+    <td style="width: 100px; height: 100px;"></td>
+  </tr>
+  <tr>
+    <td style="width: 100px; height: 100px;"></td>
+    <td style="width: 100px; height: 100px; text-align: center;">X</td>
+    <td style="width: 100px; height: 100px;"></td>
+  </tr>
+  <tr>
+    <td style="width: 100px; height: 100px;"></td>
+    <td style="width: 100px; height: 100px; text-align: center;">Pion noir</td>
+    <td style="width: 100px; height: 100px; text-align: center;">Pion blanc</td>
+  </tr>
+</table>
+
+ 
+
+Le pion noir vient de faire un saut de deux cases. Le pion blanc peux donc effectuer la prise en passant et arrivé dans la case marqué d'une croix ( X ). Avec le code écris actuellement, mon pion noir n'est pas supprimé. Il faut donc que je trouve comment régler ce problème.
+Comme je ne suis pas intérésser àla partie graphique, je vais continuer à me documenter pour comprendre comment est géré l'affichage.
+
+Cette semaine j'ai aussi expliqué à d'autres élève ce que j'avais compris sur le problème de la  gestion de la prise en passant.
+
+Enfin, j'ai lu les slides concernant le design pattern  *visitor* et le *double dispatch*.  
+
+ 
 ****
+
+
+
+
+
+
 # Cyril Godet
 
 ### Homework
