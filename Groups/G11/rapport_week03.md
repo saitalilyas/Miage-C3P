@@ -79,3 +79,11 @@ N'ayant pas compris si l'on devait choisir un kata chacun ou deux kata pour le b
 ### Lien vers notre dépôt : 
 
 Toute nos modification du jeu Chess seront sur le repo suivant : https://github.com/ThomasLienard/Chess  que nous diviserons en branche pour le modifier. 
+
+## Alyocha Yahi 
+
+### Katas choisis : 
+
+ * Fix pawn moves! (Practice debugging and testing)
+
+   J'ai décidé d'implementer une classe FirstPawn pour gérer le premier mouvement du pion (ajouter un deplacement de deux cases) 
