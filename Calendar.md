@@ -1,19 +1,18 @@
 ## One glance schedule
 
-- 01 Week: 05-06 Sep **Module 1:** Test introduction
-- 02 Week: 12-13 Sep **Module 2:** OOP refresh
-- 03 Week: 19-20 Sep **Module 3:** Reverse engineering 
-- 04 Week: 26-27 Sep **Module 4:** Test Quality
-- 05 Week: 03-04 Oct **Module 5:** Hook and templates (Gabriel)
-- 06 WeekL Vendredi 11 Oct - Examen Salle B12, B13 (Gabriel)
-- 17-18 Oct Pas de cours
-- 07 Week: 24-25 **Module 6:** Double dispatch (Gabriel)
-- Break 31-1 Nov
-- 08 Week 07-08 Nov **Modules 7 and 8:** Composite + Visitor
-- 09 Week 14-15 Nov **Module 9:** Inheritance
-- 10 Week 21-22 Nov "Explain your design"
-- 11 Week 28-29 Dec Practice
-- 12 Week 05-06 Dec **Module 10:** Types (Guille jeudi et vendredi)
-- Examen le 13 Dec de 9h à 12h (amphi à confirmer).
+- 01 Week: 04-05 Sep **Module 1:** Test introduction
+- 02 Week: 11-12 Sep **Module 2:** OOP refresh
+- 03 Week: 18-19 Sep **Module 3:** Reverse engineering 
+- 04 Week: 25-26 Sep **Module 4:** Test Quality
+- 05 Week: 02-03 Oct **Module 5:** Hook and templates
+- 06 Week: 09-10 Oct
+- 16-17 Oct Pas de cours
+- 07 Week: 23-24 **Module 6:** Double dispatch (Seb?)
+- Break 30-31 Oct Pas de cours
+- 08 Week 06-07 Nov **Modules 7 and 8:** Composite + Visitor
+- 09 Week 13-14 Nov **Module 9:** Inheritance
+- 10 Week 20-21 Nov "Explain your design"
+- 11 Week 27-28 Dec Practice
+- 12 Week 04-05 Dec **EXAMEN AMPHI:**
 
 
