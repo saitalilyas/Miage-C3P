@@ -81,6 +81,7 @@ You are going to be graded on
 - **Bonus:** Getting contact with the community to ask questions and help (discord, mailing lists).
 
 :warning: **Big big warning: You must have over 10 on every grade. **
+There will be only one 'Rattrapage / second chance' Examenation.
 
 ## FAQ
 
