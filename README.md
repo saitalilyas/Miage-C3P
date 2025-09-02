@@ -80,7 +80,7 @@ You are going to be graded on
 - Practical Project (in group)
 - **Bonus:** Getting contact with the community to ask questions and help (discord, mailing lists).
 
-Your final grade will be a weighted average of all these grades.
+:warning: **Big big warning: You must have over 10 on every grade. **
 
 ## FAQ
 
