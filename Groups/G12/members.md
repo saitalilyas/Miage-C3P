@@ -1,2 +1,0 @@
-CONOIR 	JULIEN				x.y.etu
-COFFRE	MAUREEN
