@@ -62,3 +62,22 @@
 > 1. L'onglet se trouvant sous l'éditeur de méthodes
 > 2. L'onglet apparaissant avant de commit
 > D'autres sont surement présents, mais je ceux-ci sont ceux que je rencontre les plus souvent. 
+
+### Extras
+
+> #### Can you learn about cascades and block closures?
+> **Cascades**
+> Exemple :
+> ```Smalltalk
+>    Transcript open;
+>    clear;
+>    nextPutAll: 'wow a tab just opened';
+>    yourself.
+>```
+> Le charactère ';' permet d'envoyer des messages en cascades à un objet.  
+> Dans le cas ici présents comme on écrit le premier ';' après open, la cascade sera réalisée sur l'objet Transcript. 
+> Ce qui signifie que Transcript va effectuer les méthodes open, clear, nextPutAll: et yourself
+> yourself permet de renvoyer l'objet initial sur lequel la cascade s'est réalisée, si nous avons besoin de le récupérer
+> 
+> **Block closure**
+> Les blocks peuvent être apparentés à méthodes anonymes ou lambda methods. Ils ne s'exécutent que si nécessaire, ce qui permet de controller une execution. 
