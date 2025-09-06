@@ -42,7 +42,7 @@
 
 > #### What program did you write?
 > J'ai écrit un "mini-jeu" sur [ce dépôt git](https://github.com/LeoDefossez/NTME_pharo/tree/master)
-> Très peu de choses sont présentes, mais cela contient des classes, méthodes et 3 tests
+> Il n'est pas du tout interactif, très peu de choses sont présentes, mais cela contient des classes, méthodes et 3 tests
 > #### What problems did you find? 
 > Connaissant déjà pharo, je n'ai pas eu de problèmes particuliers
 
