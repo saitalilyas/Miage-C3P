@@ -60,7 +60,7 @@
 > #### Are there tools that show you violations to such rules?
 > Oui, il y en a plusieurs, ceux que je rencontre les plus souvent sont :  
 > 1. L'onglet se trouvant sous l'éditeur de méthodes
-> 2. L'onglet apparaissant avant de commit
+> 2. L'onglet apparaissant avant de commit  
 > D'autres sont surement présents, mais je ceux-ci sont ceux que je rencontre les plus souvent. 
 
 ### Extras
