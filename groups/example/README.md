@@ -1,4 +1,5 @@
 # Group
 
-- Guillermo Polito
-- Stéphane Ducasse
+- MIROUX Julien
+- LANG Olivia
+- NGUYEN Phuong Lan
