@@ -247,3 +247,5 @@ b value: 12.
 
 - Les méthodes dans class side sont elles des méthodes équivalentes à des constructeur en Java?
 - Je ne comprends pas trop l'écriture : (0@0 corner: 100@200)
+
+# Lan 
