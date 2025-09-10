@@ -10,7 +10,7 @@ Je n'ai pas de question particulière pour l'instant.
 
 ## HEDDI Abdelkader
 
-J'ai terminé le premier TP sur la création de la classe `Counter` que vous pouvez le voir sur les captures d'écrans ci-dessous.
+J'ai terminé le premier TP sur la création de la classe `Counter` comme vous pouvez le voir sur les captures d'écrans ci-dessous.
 
 ![tp1abdelkader-1](tp1abdelkader1.png)
 ![tp1abdelkader-2](tp1abdelkader2.png)
