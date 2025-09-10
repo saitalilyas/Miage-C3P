@@ -1,5 +1,25 @@
 ### Obede :
+#### Learn about Collections in Pharo
+-In Pharo, a collection is an object that groups other objects together.
+It is used to:
+	•	Store multiple elements (numbers, strings, objects, …)
+	•	Organize them (ordered, unordered, unique, key-value, …)
 
+Exemple of collection
+#(1 2 3) wiht numbers
+#('Obede' 'Jean' 'Adil') with strings
+
+For iteration here is the example i tried
+
+	t := #('Obede' 'Jean' 'Adil') do: [ :each | Transcript show: t].
+
+#### Learn about Conditionals
+In Pharo, conditionals are not keywords (like if, else in Java or Python), but instead messages sent to Boolean objects (true and false).
+
+Code i tried
+
+(3 > 2) ifTrue: [ Transcript show: 'Yes, 3 > 2'; cr ].
+(3 < 2) ifFalse: [ Transcript show: 'No, 3 > 2'; cr ].
 ---
 
 ### Jean-Alexis :
