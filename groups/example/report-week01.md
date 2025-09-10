@@ -263,12 +263,12 @@ https://files.pharo.org/media/pharoCheatSheet.pdf
 - Collections are containers that hold multiple elements and provide powerful ways to iterate, query, transform, and manipulate them.
 - Pharo standard library provides:
 Sequenceable collections:
-+ SequenceableCollection: 
+### SequenceableCollection: 
 ```
 ('hello' at: 1) = $h
 ```
 => This is a String collection (belongs to ArrayedCollection) to check if the word "hello" starts with "h". The result is true.
-+ Hashed Collections:
+### Hashed Collections:
 ```
 s := Set new.
 s add: 4/2; add: 4; add: 2.
@@ -276,7 +276,7 @@ s size
 ```
 => This is a Set collection. We add 3 elements here. However, a set does not allow duplicates; there are two elements "2" here and the Set only allow 1 element.
 The result is 2 (return size and there are 2 elements)
-+ Bag: A Bag is much like a Set except that it does allow duplicates.
+### Bag: A Bag is much like a Set except that it does allow duplicates.
 ```
 { Color black. Color white. (Color red + Color blue + Color green) }
 asBag size.
@@ -296,4 +296,25 @@ value)
 + https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week3/C019-W3S09-Iterators.pdf
 + https://book.gtoolkit.com/working-with-collections-in-pharo-w9fc31ubksh9va7i1516z5mt
 + https://files.pharo.org/books-pdfs/pharo-by-example/2009-PharoByExample-2009-EN.pdf
+
+## Learn about conditionals in Pharo
+### Conditionals are expressed by sending one of the messages ifTrue:, ifFalse: or ifTrue:ifFalse: to the result of a boolean expression.
+```
+(17 * 13 > 220)
+ifTrue: ['bigger']
+ifFalse: [ 'smaller' ] 
+```
+=> The result is "bigger". 
+### Comparison to other language (Java):
+  + In Pharon, Boolean is an object, and ifTrue:, ifFalse: are messages sent to it.
+  + In Java, Boolean is a data type, alrealy stores T/F values.
+### Benefits and drawbacks:
+  + Benefits: The conditional is just a message sent to a Boolean object, so we can send whatever we had defined, not limited to 2 values T/F.
+  + Drawbacks: Not like the Boolean in Java, the Boolean object in Pharon is harder to use and understand (:(((), and with simple cases when we just want to check yes/no, a data type which stores only two answers seems easier to call.
+ - Sources:
++ https://files.pharo.org/books-pdfs/pharo-by-example/2009-PharoByExample-2009-EN.pdf
++ https://viblo.asia/p/cau-lenh-dieu-kien-trong-java-phan-1-vlZL9oPb4QK (yeah it is easier for me to understand in my language)
++ https://www.w3schools.com/java/java_booleans.asp (There is a lot of controversy about this site but I used it to learn code all through my uni and felt ok)
+
+## Learn how to create classes and methods
 
