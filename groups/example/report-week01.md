@@ -81,13 +81,13 @@ Ainsi la classe ProfStef n'est pas répétée.
 
 ## Ce que je n'ai pas compris
 
-Les loops (avec to-do)
+Les loops (avec to-do), les points, comment fonctionne le super avec look up (est-ce le même principe qu'en java ?) et self
 
 ## Modules vus
 
 Module 0 : M0-1 (video + PDF), M0-2 (video + PDF), M0-3 (PDF), M0-4 (video), M0-7 (video), M0-8 (video), M0-9 (PDF), M0-12 (PDF)
 
-Module 1 : 
+Module 1 : M1-1 (PDF), M1-4 (PDF), M1-5 (PDF)
 
 
 
