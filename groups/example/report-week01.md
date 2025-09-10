@@ -43,6 +43,11 @@ I think it's benefit in Pharo because you won't have a big and too long conditio
 
 #### Basic Pharo coding style
 
+There are some rules to follow, some of them are same as the others languages like the spaces "to give breath to code". Others are only in Pharo as far as I know like the comments placed under the method definition. 
+I will not repete all theses but we can found the main and most importants rules on the [this graph] (https://github.com/SquareBracketAssociates/Booklet-PharoWithStyle/blob/master/Chapters/PWS-Guidelines-1.pdf).
 
+#### Note
+
+All these informations come from my web research, specially [the documentation](https://github.com/pharo-open-documentation/pharo-wiki) and the courses of this current repository (and maybe sometime a little bit from my mind and my memory).
 
 ### Adil :
