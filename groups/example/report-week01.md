@@ -254,3 +254,41 @@ b value: 12.
 - Je ne comprends pas trop l'écriture : (0@0 corner: 100@200)
 
 # Lan 
+## Learn about collections in Pharo and their iterators
+- Collections are containers that hold multiple elements and provide powerful ways to iterate, query, transform, and manipulate them.
+- Pharo standard library provides:
+Sequenceable collections:
++ SequenceableCollection: 
+```
+('hello' at: 1) = $h
+```
+=> This is a String collection (belongs to ArrayedCollection) to check if the word "hello" starts with "h". The result is true.
++ Hashed Collections:
+```
+s := Set new.
+s add: 4/2; add: 4; add: 2.
+s size
+```
+=> This is a Set collection. We add 3 elements here. However, a set does not allow duplicates; there are two elements "2" here and the Set only allow 1 element.
+The result is 2 (return size and there are 2 elements)
++ Bag: A Bag is much like a Set except that it does allow duplicates.
+```
+{ Color black. Color white. (Color red + Color blue + Color green) }
+asBag size.
+```
+=> This is a Bag collection. The result is 3. Two elements are "black" and "white". The other is "white" (white = red + blue + green).
+- Some ways to iterate over collection:
+**do:** (iterate)
+**collect:** (iterate and collect results)
+**select:** (select matching elements)
+**reject:** (reject matching elements)
+**detect:** (get first element matching)
+**detect:ifNone:** (get first element matching or a default
+value)
+**includes:** (test inclusion)
+Source:
+https://pharoweekly.wordpress.com/wp-content/uploads/2021/07/collections.pdf
+https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week3/C019-W3S09-Iterators.pdf
+https://book.gtoolkit.com/working-with-collections-in-pharo-w9fc31ubksh9va7i1516z5mt
+https://files.pharo.org/books-pdfs/pharo-by-example/2009-PharoByExample-2009-EN.pdf
+
