@@ -1,8 +1,6 @@
 ### Obede :
 
-___
 ---
-***
 
 ### Jean-Alexis :
 
@@ -52,5 +50,7 @@ I will not repete all theses but we can found the main and most importants rules
 #### Note
 
 All these informations come from my web research, specially [the documentation](https://github.com/pharo-open-documentation/pharo-wiki) and the courses of this current repository (and maybe sometime a little bit from my mind and my memory).
+
+---
 
 ### Adil :
