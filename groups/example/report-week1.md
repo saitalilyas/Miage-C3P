@@ -29,3 +29,8 @@ Je n’ai pas rencontré de blocages majeurs, même si l’adaptation à l’IDE
 
 Je commence à prendre mes repères petit à petit et je comprends mieux la logique propre à Pharo.  
 Pour l’instant, je n’ai pas de question particulière.
+
+## Khalil BOUCHAMA
+
+Durant la semaine du 3/09/2025 au 10/09/2025 j'ai terminé le tp n°1 sur la création d'un Compteur. 
+
