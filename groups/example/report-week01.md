@@ -20,6 +20,15 @@ Code i tried
 
 	(3 > 2) ifTrue: [Transcript show: 'Yes, 3 > 2'].
 	(3 < 2) ifFalse: [Transcript show: 'Yes, 3 is not < 2']
+
+
+ #### Classes and method
+
+ I learned how to create a new class and also how to create class test
+ I learned how to create an instant method and a class method
+
+ My Gitlab first project : git@gitlab-etu.fil.univ-lille.fr:obede.de-djekounyom.etu/projet_counter.git
+ 
 ---
 
 ### Jean-Alexis :
