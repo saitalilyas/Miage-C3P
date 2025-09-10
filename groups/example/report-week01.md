@@ -155,6 +155,8 @@ Comparer aux autres langage comme Java par exemple on a pas de "if,else, else if
 
 Dans l'ensemble en Pharo l'avantage de cette écriture de condition est la lisibilité.
 
+Par contre dans le cas où plusieurs conditions s'enchaineent, cela risque d'être beaucoup moins lisible.
+
 Pour information j'ai aussi trouvé qu'il existait **whileTrue**
 
 > _Vu avec ProfStef, M0-2 _
@@ -173,8 +175,8 @@ Object << #MyClass
 	tag: '' ;
 	package: 'MyCounter'
 ```
-#MyClass -> correspond au nom de ma classe
-slots -> correspond aux variables d'instances (Ici count)
+- #MyClass -> correspond au nom de ma classe
+- slots -> correspond aux variables d'instances (Ici count)
 
 ### Création de méthode 
 Cliquer sur votre classe, un onglet "Inst. side meth" sera visible. Dans celui-ci vous pouvez ajouter votre méthode
@@ -183,7 +185,7 @@ Par exemple un getter de count :
 count 
 	^ count
 ```
-**AJOUTER LIEN GIT DU PROJET COMPTEUR ! **
+Lien vers projet Counter : https://github.com/Frontaz1/MyCounter
 > _Vu Exercice du Compteur _
 
 ## Learn about the basic Pharo coding style.
@@ -201,6 +203,9 @@ not good =>  eMenu ou edit_menu
 good => Counter
 not good => COUNTER
 ```
+
+> _Vu avec 'Pharo with Style' free book _
+
 ## Extra
 
 ### Cascade
