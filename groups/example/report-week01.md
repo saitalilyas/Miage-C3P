@@ -278,17 +278,17 @@ asBag size.
 ```
 => This is a Bag collection. The result is 3. Two elements are "black" and "white". The other is "white" (white = red + blue + green).
 - Some ways to iterate over collection:
-**do:** (iterate)
-**collect:** (iterate and collect results)
-**select:** (select matching elements)
-**reject:** (reject matching elements)
-**detect:** (get first element matching)
-**detect:ifNone:** (get first element matching or a default
++ **do:** (iterate)
++ **collect:** (iterate and collect results)
++ **select:** (select matching elements)
++ **reject:** (reject matching elements)
++ **detect:** (get first element matching)
++ **detect:ifNone:** (get first element matching or a default
 value)
-**includes:** (test inclusion)
-Source:
-https://pharoweekly.wordpress.com/wp-content/uploads/2021/07/collections.pdf
-https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week3/C019-W3S09-Iterators.pdf
-https://book.gtoolkit.com/working-with-collections-in-pharo-w9fc31ubksh9va7i1516z5mt
-https://files.pharo.org/books-pdfs/pharo-by-example/2009-PharoByExample-2009-EN.pdf
++ **includes:** (test inclusion)
+- Source:
++ https://pharoweekly.wordpress.com/wp-content/uploads/2021/07/collections.pdf
++ https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week3/C019-W3S09-Iterators.pdf
++ https://book.gtoolkit.com/working-with-collections-in-pharo-w9fc31ubksh9va7i1516z5mt
++ https://files.pharo.org/books-pdfs/pharo-by-example/2009-PharoByExample-2009-EN.pdf
 
