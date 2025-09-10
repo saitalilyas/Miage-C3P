@@ -18,8 +18,8 @@ In Pharo, conditionals are not keywords (like if, else in Java or Python), but i
 
 Code i tried
 
-(3 > 2) ifTrue: [ Transcript show: 'Yes, 3 > 2'; cr ].
-(3 < 2) ifFalse: [ Transcript show: 'No, 3 > 2'; cr ].
+	(3 > 2) ifTrue: [Transcript show: 'Yes, 3 > 2'].
+	(3 < 2) ifFalse: [Transcript show: 'Yes, 3 is not < 2']
 ---
 
 ### Jean-Alexis :
