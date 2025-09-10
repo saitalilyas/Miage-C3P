@@ -318,3 +318,15 @@ ifFalse: [ 'smaller' ]
 
 ## Learn how to create classes and methods
 
+I failed to run my program. I will ask my friends who had done it to help me fix my code. These are the docs that I had read:
+- https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week1/Exo-Counter.pdf
+- https://files.pharo.org/media/pharoCheatSheet.pdf
+
+## Learn about the basic Pharo coding style.
+- There are some rules that we have to follow when coding by Pharo:
+  + Use descriptive names: Choose a clear name, no abbreviations ("timeOfDay" is ok, but not "tod" or "ToD")
+  + Method selectors start with lowercase (it's not obligatory in other language but in Pharo. "getMethods" is ok but "GetMethods" is not)
+  + Shared variables start with uppercase; Private variables start with lowercase
+
+## What I don't know:
+- How to run a program in Pharo, the coding convention here comparing to other languages. 
