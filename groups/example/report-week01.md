@@ -248,10 +248,15 @@ b value: 12.
 ```
 > _Vu with ProfStef _
 
+
 ## Ce que je n'ai pas compris / Questions
 
 - Les méthodes dans class side sont elles des méthodes équivalentes à des constructeur en Java?
 - Je ne comprends pas trop l'écriture : (0@0 corner: 100@200)
+
+## Document consulté (Supplémentaires) 
+
+https://files.pharo.org/media/pharoCheatSheet.pdf
 
 # Lan 
 ## Learn about collections in Pharo and their iterators
