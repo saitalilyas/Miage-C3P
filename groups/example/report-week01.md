@@ -12,9 +12,11 @@
 
   Here are some examples that I tried :
 
+  ```
   #(45 56 76 34) select: [ :each | each odd ].
   
   #(45 56 76 34) collect: [ :each | each * 5 ].
+```
 
 #### Conditionals 
 
