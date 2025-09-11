@@ -21,11 +21,11 @@
 
   il existe également d'autre facon d'itérer comme :
         - `collect: aBlock` qui va renvoyer une collection qui aura appliquer la transofrmation
-        ![exemple collect](\Screen\Thomas\week1\collect.png)
+        ![exemple collect](./Screen/Thomas/week1/collect.png)
         - `select: aBlock` qui permet de fltrer selon une condition
-        ![exemple select](\Screen\Thomas\week1\select.png)
+        ![exemple select](./Screen/Thomas/week1/select.png)
         - `reject: aBlock` qui fait l'inverse de select (ne renvoie que ceux qui ne valide pas la condition)
-        ![exemple reject](\Screen\Thomas\week1\reject.png)
+        ![exemple reject](./Screen/Thomas/week1/reject.png)
         ... (`reverseDo`,`detect`)
 
 ##### Sources
@@ -43,8 +43,8 @@
 
   Voici un exemple : 
 
-  ![exemple true](\Screen\Thomas\week1\true.png)
-  ![exemple false](\Screen\Thomas\week1\false.png)
+  ![exemple true](./Screen/Thomas/week1/true.png)
+  ![exemple false](./Screen/Thomas/week1/false.png)
 
   La différence avec les autres langages c'est que pharo n'utilise pas de mots-clés comme if et else avec une structure, c'est un message envoyée a un objet. L'avantage que je vois est une meilleur efficacité, sa execute que le bloc utile et permet d'éviter l'execution du else qui peut etre des fois inutile. L'inconvénient c'est la prise en main comme cela est différent des autres langages qu'on a l'habitude d'utiliser 
 
@@ -121,18 +121,18 @@
         - do: [:element | "traitements"]
             - element = variable qui référence successivement les différents éléments de la collection
             - les traitements définis dans le bloc sont exécutés successivement pour chaque éléments de la collection
-![exemple Do](\Screen\Baptiste\week1\Do.png)
+![exemple Do](./Screen/Baptiste/week1/Do.png)
 
         //Pour faire un traitement et récupérer le résulats de ce traitement pour chaque élément
         - Collect: [:element | "traitements"]
             - Retourne une collection du même type que celle parcourue
             - avec les résultats des traitements pour chaque élément 
-![exemple collect](\Screen\Baptiste\week1\collect.png)
+![exemple collect](./Screen/Baptiste/week1/collect.png)
 
         //Parcourir une Collection pour extraire une sous-collection qui vérifie une expression booléenne
         - select: [:element | "expression booléenne"]
             - Retourne les éléments pour lesquels l'expression booléenne est vraie
-![exemple select](\Screen\Baptiste\week1\select.png)
+![exemple select](./Screen/Baptiste/week1/select.png)
 
         //Parcourir une Collection pour extraire une sous-collection qui ne vérifie pas l'expression booléenne
         - reject: [:element | "expression booléenne"]
@@ -170,7 +170,7 @@
         - Pour un développeur qui a l'habitude de développer dans d'autres langages, ça peut paraitre étrange
         - Ecriture plus longue qu'avec if et else
 
-![exemple ifTrue](\Screen\Baptiste\week1\Iftrue.png)
+![exemple ifTrue](./Screen/Baptiste/week1/Iftrue.png)
 
 # Learn how to create classes and methods
 
