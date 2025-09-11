@@ -1,4 +1,4 @@
-KENGLE NKOUAMEN Pierrette Cahty
+- KENGLE NKOUAMEN Pierrette Cahty
         Les collections en Pharo et leurs itérateurs
 
             Une collection en Pharo est un objet qui regroupe d’autres objets. Elle sert à stocker, organiser et manipuler des ensembles de données.
@@ -104,4 +104,62 @@ KENGLE NKOUAMEN Pierrette Cahty
 
 
 
-KANTO....
+- KANTO RASOANAIVO
+
+Learn about collections in Pharo and their iterators
+    ●	Une collection est une classe abstraite utilisée pour gérer et gérer des objets. Elles permettent d'effectuer des opérations comme ajouter, supprimer ou accéder aux éléments. 
+    Nb: Toutes les itérations commencent à index 1.
+    Les collections utilisées :
+    ●	Array : fixe, on peut accéder directement à un élément du tableau avec le message et: ou at:put: (pour remplacer), crée avec new:.
+    ●	OrderedCollection (ordonné) : peut croître ou diminuer en taille, tout en maintenant l'ordre d'insertion.
+    ●	Set (non ordonné) : peut croître en taille
+    ●	Dictionary : clé-valeur
+    Itérations :
+    ●	do: exécute un bloc de code pour chaque élément d'une collection, en passant chaque élément comme argument au bloc.
+    #(1 2 3 4 5) do: [ :each | Transcript show: each ; cr ]
+    ●	collect : applique un bloc de code à chaque élément d'une collection et renvoie une nouvelle collection avec les résultats.
+    | result |
+    result := #(1 2 3 4 5) collect: [ :each | each * 2 ].
+    "Prints #(2 4 6 8 10)"
+    ●	select: filtre les éléments d'une collection en fonction d'un bloc de code et renvoie une nouvelle collection contenant uniquement les éléments pour lesquels le bloc retourne true 
+    | result |
+    restlt := #(1 2 3 4 5) select: [ :each | each even ].
+    "Prints #(2 4)"
+
+-> Les informations viennent de mooc, vidéo.
+Learn about conditionals in Pharo
+    Exemple : 
+    self = 0 ifTrue: [^ 1] 
+    self > 0 ifTrue: [^ self * (self - 1) factorial].
+    self error ‘Not valid’
+    Pas de structures if et else comme dans d’autres langages mais dans des blocs. 
+    Avantages : facile à retenir, court, flexible.
+    Learn how to create classes and methods
+    L’'IDE on peut créer les packages et directement les classes à l'intérieur des packages. 
+
+    1.	Créer ou sélectionner un package :
+    2.	Ouvrir le System Browser.
+    3.	Choisir un package existant ou cliquer sur le bouton New Package pour en créer un nouveau.
+    4.	Créer une nouvelle classe :
+    5.	Dans le System Browser, cliquer sur le bouton New Class.
+    6.	Donner un nom à la classe.
+    7.	Définir la superclasse, qui est par défaut Object.
+    8.	Définir les variables d'instance.
+    9.	Ajouter des méthodes à la classe.
+    Lien : https://github.com/rasoanaivokanto-prog/MyCounter-C3P
+
+Learn about the basic Pharo coding style.
+    ●	Les méthodes en lowercase.
+    ●	Class en uppercase
+    Cascades :
+    Pour éviter la répétition
+    | c | 
+    c := OrderedCollection new. 
+    c add: 1. 
+    c add: 2 
+    Équivaut à : 
+    | c | 
+    OrderedCollection new. 
+    add: 1; 
+    add: 2
+    Il faut utiliser ‘;’ 
