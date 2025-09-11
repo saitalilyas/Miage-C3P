@@ -86,3 +86,28 @@ All these informations come from my web research, specially [the documentation](
 ---
 
 ### Adil :
+
+I watched the videos for modules 0 and 1, along with exercise help, completed the classes and tests, and looked a bit into collections and conditions. I haven’t done the extras.
+
+#### Example condition:
+
+```
+| age |
+age := 18.
+age >= 18
+    ifTrue: [Transcript show: 'Adult']
+    ifFalse: [Transcript show: 'Minor'].
+```
+
+#### Example iterator :
+
+```
+example iterator : 
+| collection |
+collection := #(1 2 3 4 5).
+
+collection do: [:each | Transcript show: each].
+```
+
+
+
