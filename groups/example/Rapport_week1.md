@@ -26,17 +26,9 @@ Pharo offre une variété de collections dans sa bibliothèque standard :
 - `reject:` : Exclut les éléments selon un critère
 - `detect:` : Trouve le premier élément satisfaisant une condition
 
-**Exemple de code testé :**
 
-```smalltalk
-"Parcours simple avec do:"
-#(16 11 68 19) do: [ :each | Transcript show: each ; cr ].
 
-"Transformation avec collect:"
-#(1 2 3 4) collect: [ :each | each * 2 ]. "Retourne #(2 4 6 8)"
-```
 
----
 
 ### 2. Les conditionnelles en Pharo
 
@@ -55,28 +47,10 @@ J'ai créé une classe `MyCounter` pour comprendre le processus de création :
 
 **Création de la classe :**
 
-```smalltalk
-Object subclass: #MyCounter
-    instanceVariableNames: 'count'
-    classVariableNames: ''
-    package: 'MyPackage'
-```
+
 
 **Méthodes ajoutées :**
 
-```smalltalk
-"Initialisation"
-initialize
-    count := 0
-
-"Incrémentation"
-increment
-    count := count + 1
-
-"Accès à la valeur"
-value
-    ^ count
-```
 
 **Utilisation :**
 
