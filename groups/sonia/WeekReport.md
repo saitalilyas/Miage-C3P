@@ -1,3 +1,33 @@
+Report 1
+
+Yuliia LOS:
+
+Collections in Pharo
+
+A collection is an object that stores other objects together. It is used to group items and to work with them in a uniform way.
+
+Pharo has many collections: arrays and ordered collections (for ordered data), sets and bags (for unordered data), dictionaries (for key–value pairs), and sorted collections.
+
+We iterate with messages like do: (apply an action to each element), collect: (transform elements), select: (filter), or inject:into: (accumulate a result). Ordered collections keep order and allow index access, while sets and dictionaries do not.
+
+Conditionals in Pharo:
+
+You use ifTrue: and ifFalse: instead of keywords like if in other languages. 
+
+I read the official Pharo MOOC website to find this information.
+
+I wrote a small program called MyCounter.
+
+For me the main problem was uploading it to GitHub. It took me a lot of time to set up the repository and push the code.
+
+GitHub repository link: https://github.com/YuliaLos/MyCount
+
+The basic Pharo coding style
+
+In Pharo, methods are usually very small and easy to read. The common rules are to keep each method focused on a single task, avoid long or complex code, and choose clear names. Control flow is also expressed by sending messages (like ifTrue: or ifFalse:) instead of using special syntax. This keeps the code uniform and simple.
+
+There are tools in the Pharo IDE, such as Code Critics, that automatically check your methods and highlight style problems or violations of these rules. They help you see when a method is too long, too complex, or not following best practices.
+
 # Homework/Report
 
 For next week's lecture, you need to do the following tasks and prepare a short report on how you approached them. Each of the following tasks will guide your work with questions. You must answer those questions in the report.
