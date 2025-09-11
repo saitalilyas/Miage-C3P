@@ -175,3 +175,129 @@
 > On peut voir ça dans cette partie : 
 > 
 > ![violationRules](./img/Gautier/violationView.png)
+
+# Week 1 Report 
+
+## Xavier Moyon 
+
+### Learn about collections in Pharo and their iterators
+
+What is a collection and what is it used for?
+
+Les collections sont des conteneurs, elles permettent de stocker des éléments de différentes façons et de les parcourir.
+
+What kind of collections does Pharo standard library provide?
+
+Pharo fournit différents types de collections, tels que les listes (Array), les dictionnaires et les Sets.
+
+How do you iterate collections and what are differences between them?
+
+On demande à la collection d'itérer sur elle même en utilisant les mots clefs suivants :
+- `do` va parcourir le contenu de l'itérateur et éxécuter le bloc fourni pour chaques valeurs
+- `collect` va parcourir le contenu de l'itérateur et éxécuter le bloc fourni pour chaques valeurs et retourner le résultat du bloc dans une nouvelle collection
+- `select` permet de récupérer uniquement les éléments correspondant
+- `reject` permet de sélectionner uniquement les éléments ne correspondant pas
+- `detect` permet de sélectionner le premier élément correspondant
+  ...
+  How did you find this information?
+
+Sur la vidéo suivante https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/FR/Week3/C019SD-W3-S9-v3.mp4
+Pour la définition, je me suis basé sur les liste en Java.
+
+
+
+Do not hesitate to add in the report code examples that you tried.
+
+### Learn about conditionals in Pharo
+
+How do you write conditionals in Pharo?
+
+On essaye d'utiliser le moins possible de conditions, on va préférer utiliser l'héritage en écrivant des méthodes spécifique pour chaque type.
+Par exemple la méthode "not" de la classe Booléan est implémentée de manière différente pour les sous classes True et False.
+Mais lorsque l'on doit écrire des conditions, on utilisera un message que l'on enverra à un receveur.
+
+What is different from other programming languages?
+
+Pour les autres langages, les conditions sont écrites avec une syntaxe particulières :
+```java
+if(condition){
+    sayHello();
+}
+```
+
+Tandis qu'avec pharo, les conditions fonctionnent comme une méthode classique, on envoie un message (:ifTrue ou ifFalse) à un receveur (True ou False) :
+```pharo
+|c|
+c := Random new nextInteger: 30.
+Transcript open.
+
+(c between: 10 and:20)
+ifTrue: [Transcript show: 'value is  between 10 and 20  - ' , c asString.]
+ifFalse: [ Transcript show: 'value is not between 10 and 20'].
+```
+
+
+Can you think about the benefits and drawbacks of the approach?
+
+
+How did you find this information? In the Following vidéo : 
+
+https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S1.mp4
+
+### Learn how to create classes and methods
+
+How do you write a small program with classes and methods in Pharo?
+Pharo is indeed, very IDE oriented and you have to get used to the tooling.
+
+Pour commencer on créer un package si on en a pas déjà.
+Ensuite sur ce package on va pouvoir ajouter une classe en faisant un clic droit > new class.
+Ensuite, on va pouvoir nommer notre classe en remplaçant le champ "myClass". Puis pour créer une méthode on va pouvoir cliquer sur "Inst side meth"
+How did you find this information?
+
+
+What program did you write?
+
+Un programme pour jouer au "Juste Prix" avec un animateur. Il manque encore un certains nombres de fonctionnalités cependant. On peut pour l'instant seulement choisir un nombre.
+
+What problems did you find?
+
+J'ai eu quelques difficultés pour prendre en mains l'interface de pharo.
+J'ai aussi fait quelques erreurs en oubliant l'ordre des priorités des opérations.
+
+Please provide a github repository link.
+
+https://github.com/Moyon-Xavier/c3p-just-price
+
+
+### Learn about the basic Pharo coding style.
+
+Pharo methods are usually small and readable.
+What rules are common to follow?
+
+- Ne pas mettre trop d'instructions dans un bloc.
+- Il faut indiquer le type des méthode (est-ce un accesseur, une méthode de calcul)
+- Il n'est pas obligatoire de mettre un point sur la dernière instruction d'une méthode.
+- Une classe/méthode est bien plus belle si elle est commentée.
+
+Are there tools that show you violations to such rules?
+Pour le type de méthode, un warning ce déclenche en si le type n'est pas défini mais n'empêche pas l'exécution
+Please show code examples that violate some rules.
+![warning.png](img/Xavier/w1/warning.png)![warning2.png](img/Xavier/w1/warning2.png)
+_Hint:_ look for the `Pharo with Style` free book.
+
+### Extras
+
+Can you learn about cascades and block closures?
+
+Ceci est un exemple de cascade : 
+![cascade.png](img/Xavier/w1/cascade.png)
+
+How do you approach it?
+
+Pour les casacdes, j'ai utilisé le pdf suivant : 
+![cascadeCourse.png](img/Xavier/w1/cascadeCourse.png)
+
+Did you ask questions in the discord channels or mailing lists?
+
+This is extra points ;)
+
