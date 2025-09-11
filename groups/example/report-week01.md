@@ -318,9 +318,10 @@ ifFalse: [ 'smaller' ]
 
 ## Learn how to create classes and methods
 
-I failed to run my program. I will ask my friends who had done it to help me fix my code. These are the docs that I had read:
+I have finished creating classes and methods, creating test classes or using playgrounds to run tests. These are the docs that I had read:
 - https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week1/Exo-Counter.pdf
 - https://files.pharo.org/media/pharoCheatSheet.pdf
+- https://github.com/LaCoir/MyCounter
 
 ## Learn about the basic Pharo coding style.
 - There are some rules that we have to follow when coding by Pharo:
@@ -329,4 +330,4 @@ I failed to run my program. I will ask my friends who had done it to help me fix
   + Shared variables start with uppercase; Private variables start with lowercase
 
 ## What I don't know:
-- How to run a program in Pharo, the coding convention here comparing to other languages. 
+- Pharo coding convention is difficult for people who are familiar with other languages.
