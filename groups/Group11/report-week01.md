@@ -64,10 +64,10 @@ I think it's benefit in Pharo because you won't have a big and too long conditio
   Here are some examples that I tried :
 
 ```
-(5 < 7)
+(5 > 7)
 	ifTrue: [ 'Il y a une erreur dans la matrice !' ]
-	ifFalse: [ 'RAS Aucun problème détécté !' ] inspect.
-"L'inspecteur doit surligner la deuxième phrase."
+	ifFalse: [ 'RAS Aucun problème détécté !' ].
+"Exécution avec print (ctrl + p)"
 ```
 
 #### Classes and methods
