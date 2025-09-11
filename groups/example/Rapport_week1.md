@@ -34,12 +34,7 @@ Pharo offre une variété de collections dans sa bibliothèque standard :
 
 Les conditionnelles en Pharo s'écrivent comme des messages envoyés aux objets booléens :
 
-```smalltalk
-"Condition simple avec ifTrue:"
-(5 = 5) ifTrue: [ Transcript show: 'Égal'; cr ].
-```
 
----
 
 ### 3. Création de Classes et Méthodes
 
