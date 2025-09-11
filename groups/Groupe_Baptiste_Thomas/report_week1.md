@@ -17,7 +17,7 @@
     
   `do: aBlock` qui itère chaque éléments d'une collection
 
-  ![exemple do](/Screen/Thomas/week1/do.png)
+  ![exemple do](groups\Groupe_Baptiste_Thomas\Screen\Thomas\week1\do.png)
 
   il existe également d'autre facon d'itérer comme :
         - `collect: aBlock` qui va renvoyer une collection qui aura appliquer la transofrmation
