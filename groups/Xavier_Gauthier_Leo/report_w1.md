@@ -81,3 +81,97 @@
 > 
 > **Block closure**
 > Les blocks peuvent être apparentés à méthodes anonymes ou lambda methods. Ils ne s'exécutent que si nécessaire, ce qui permet de controller une execution. 
+
+# Week 1 report
+
+## Gautier Louvier
+
+### Learn about collections in Pharo and their iterators
+
+> #### What is a collection and what is it used for?
+> 
+> Une collection dans pharo: est un objet contenant d'autre objet on obtient donc une forme de stockage qui peut avoir certaines spécificité selon les cas d'usage. 
+> 
+> On peut aussi réaliser des boucles sur celle ci pour executer un bout de code sur chaque élément. 
+> 
+> 
+> 
+> #### What kind of collections does Pharo standard library provide?
+> 
+> On peut retrouver une multitude de collection j'ai trouvés dans les vidéos / slides cette images qui je pense sont les standard library.
+> ![(collectionHierarchy)](./img/Gautier/TypeOfCollections.png)
+> 
+> #### How do you iterate collections and what are differences between them?
+> 
+> On peut par exemple itéré en selection de maniere spécfique ce que l'ont veut garder avec "select:"  et avec une query specifique.
+> 
+> ![(image selectIterator)](./img/Gautier/selectIterator.png)
+> 
+> 
+> 
+> On peut aussi retrouver l'itérateur "collect:"  qui va récupérer par exemple tout les résultats d'un block pour le ranger dans une collections qui peut être return. 
+> 
+> ![(iteratorCollect)](./img/Gautier/collectIterator.png)
+> 
+> #### How did you find this information?
+> 
+> Sur les screen dans la section du module 1. D'autre itérateur que j'ai trouvé sur les slides : 
+> 
+> 
+> ![basicsIterator](./img/Gautier/BasicsIterators.png)
+> 
+> 
+> ![MoreIterators](./img/Gautier/MoreIterators.png)
+
+### Learn about conditionals in Pharo
+
+> #### How do you write conditionals in Pharo?
+> 
+>     Les conditions s'écrive comme des messages c'est à dire pour executer True  il faut envoyer le message "ifTrue" avec son argument donc ifTrue:Argument (c'est donc un keyword si j'ai bien compris)
+> 
+> 
+> 
+> J'ai pris l'exemple de True et False mais c'est la même chose avec for,while,do ect. . .
+> 
+> #### What is different from other programming languages?
+> 
+> On appel directement les messages respectif pour les boolean pour réaliser l'opération dessus. Avec IfFalse et IfTrue 
+> 
+> #### Can you think about the benefits and drawbacks of the approach?
+> 
+> Je dirais que ça évite de devoir apprendre une nouvelle syntaxe spécifique au condition, vu que ce sont des objets comme tout le reste et donc on intéragit de la même maniere avec eux. Je sais pas si on peut appeler ça un point négatif mais je dirais que par conséquent si ça ressemble à tout le reste c'est peut etre plus dur à detecter dans un grand code ? Sinon je ne vois pas trop d'inconvénients.
+> 
+> 
+> 
+> #### How did you find this information?
+> 
+> ![imageCondition](./img/Gautier/Conditional.png)
+> 
+> J'ai déduit ces informations avec ce slide.
+
+### Learn how to create classes and methods
+
+> #### What program did you write?
+> 
+> J'ai fais le petit programme Counter.
+> 
+> #### What problems did you find?
+> 
+> 
+
+### Learn about the basic Pharo coding style
+
+> #### What rules are common to follow?
+> 
+> On utilise le camelCase pour que ce soit cohérent.
+> 
+> 
+> Une regle qui me paraissait intéressante aussi : 
+> 
+> 
+> 
+> #### Are there tools that show you violations to such rules?
+> 
+> On peut voir ça dans cette partie : 
+> 
+> ![violationRules](./img/Gautier/violationView.png)
