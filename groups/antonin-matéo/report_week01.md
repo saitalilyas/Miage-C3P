@@ -175,3 +175,86 @@ Sources :
 
 - M0-7 Understanding Messages: Sequence and Cascade [PDF](https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S04-Messages-Sequence.pdf) / [Video](https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S4-EN-V1.mp4)
 - M0-8 Introduction to Blocks [PDF](https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S06-Blocks.pdf) / [Video](https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S6-EN-V1.mp4)
+
+# Matéo DA COSTA
+
+# Pharo Programming Notes
+
+## Collections and Iterators
+
+### Collections
+A **collection** is the abstract superclass of all classes that represent a group of elements. It is used to store, organize, and manipulate sets of objects in Pharo.  
+
+Common collection types include:
+
+- `OrderedCollection`  
+- `Array`  
+- `Set`  
+- `Dictionary`  
+
+And other more : 
+![Collections](images/CollectionInheritance.png)  
+
+**Source:** [YouTube: Pharo Collections](https://www.youtube.com/watch?v=RCEizZ5h6Dg)
+
+---
+
+### Iterators
+
+- **`collect:`** is an iterator that transforms a collection by applying a block to each element and returns a new collection of the same kind.  
+- **`do:`** is a message sent to a collection. It instructs the collection to iterate over its elements. 
+
+**Source:** [Pharo MOOC: Iterators](https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week3/C019-W3S09-Iterators.pdf)  
+
+**Tip:** I used `Cmd + M` as a shortcut to navigate methods description in the playground.
+
+## Conditionals
+
+In Pharo, conditionals are **used as messages**.
+
+Example:
+
+```smalltalk
+Weather isRaining
+    ifTrue: [ self takeMyUmbrella ]
+    ifFalse: [ self takeMySunglasses ]
+```
+
+- `True` and `False` are **unique instances of their respective classes**, not primitive types. This design provides greater flexibility, allowing you to customize the behavior of a class when it receives these messages.  
+- In my opinion, choosing between lazy or eager evaluation is useful for dynamically modifying class behavior, although it can make nested conditionals harder to read.  
+
+**Sources:**  
+- [Pharo MOOC: Basic Booleans and Conditionals](https://rmod-pharo-mooc.lille.inria.fr/OOPMooc/01-Welcome/W1S07-BasicBooleansAndCondition.pdf)  
+- [YouTube: Pharo Conditionals](https://www.youtube.com/watch?v=lsnndemTkao)
+
+## Classes and Methods
+
+To better understand how to use Pharo and, in particular, the IDE, I practiced **extreme TDD** by redoing the Counter exercise.
+
+**Goal:**  
+Create a counter object that can be incremented, decremented, and queried for its current value. This exercise introduces:
+
+**Steps:**
+
+1. Create a package  
+2. Create a TestClass  
+3. Write the first accessor test  
+4. Implement the accessor method  
+5. Pass the test  
+6. Repeat the TDD cycle for `increment` and `decrement`  
+
+**Sources:**  
+- [Pharo MOOC: Pharo Syntax in a Nutshell](https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week1/C019-W1S05-PharoSyntaxInANutshell.pdf)  
+- [Pharo MOOC: Counter Exercise](https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week1/Exo-Counter.pdf)
+
+## Basic Pharo Coding Style
+
+While using extreme TDD, I encountered some common issues for each test.
+
+- **First issue:** The class had not been created yet.  
+![Class not created](images/ClassError.png)
+
+- **Other issues:** Methods were not implemented yet, causing test failures.  
+![Methods not implemented](images/MethodError.png)
+
+These examples highlight typical **violations of Pharo coding rules**.
