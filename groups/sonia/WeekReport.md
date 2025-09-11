@@ -28,62 +28,89 @@ In Pharo, methods are usually very small and easy to read. The common rules are 
 
 There are tools in the Pharo IDE, such as Code Critics, that automatically check your methods and highlight style problems or violations of these rules. They help you see when a method is too long, too complex, or not following best practices.
 
-# Homework/Report
+# Week 1 – Sofia Demchuk  
 
-For next week's lecture, you need to do the following tasks and prepare a short report on how you approached them. Each of the following tasks will guide your work with questions. You must answer those questions in the report.
+### 1) Collections in Pharo  
+This week started with collections. At first, it was a bit confusing because in Pharo collections work differently than in Python or Java. Everything is done with messages. Slowly I figured it out: there are arrays, OrderedCollections, sets, and dictionaries.  
 
-## Learn about collections in Pharo and their iterators
+For example, arrays have a fixed size, but OrderedCollections can grow. What I liked is that you can write something like:  
 
-What is a collection and what is it used for?
-What kind of collections does Pharo standard library provide?
-How do you iterate collections and what are differences between them?
-How did you find this information?
+```smalltalk
+#(1 2 3 4) collect: [ :each | each * 2 ].
+"→ #(2 4 6 8)"
+```
 
-Do not hesitate to add in the report code examples that you tried.
+And you instantly see the result. I also tried `do:`, `collect:`, `select:` and `reject:`. They are very handy, even though at first I mixed them up.  
 
-## Learn about conditionals in Pharo
+### 2) Conditionals  
+Then I learned about conditionals. Pharo doesn’t use the usual `if/else` keywords. Instead, you write `ifTrue:` and `ifFalse:`.  
 
-How do you write conditionals in Pharo?
-What is different from other programming languages?
-Can you think about the benefits and drawbacks of the approach?
-How did you find this information?
+Example I tried:  
 
-Do not hesitate to add in the report code examples that you tried.
+```smalltalk
+isRaining
+    ifTrue: [ Transcript show: 'Take umbrella'; cr ]
+    ifFalse: [ Transcript show: 'Take sunglasses'; cr ].
+``` 
 
-## Learn how to create classes and methods
+### 3) Classes and methods  
 
-How do you write a small program with classes and methods in Pharo?
-Pharo is indeed, very IDE oriented and you have to get used to the tooling.
-How did you find this information?
+Next, I created my first class. Honestly, it was a bit scary because the Pharo environment looks different from IDEs I usually use.  
+I made a simple counter class `MyCounter` to experiment with instance variables and methods.  
 
-What program did you write?
-What problems did you find?
-Please provide a github repository link.
+```smalltalk
+Object subclass: #MyCounter
+    instanceVariableNames: 'count'
+    classVariableNames: ''
+    package: 'MyApp'.
+```
+Then I defined some methods:
+```smalltalk
+MyCounter >> initialize
+    count := 0.
 
-## Learn about the basic Pharo coding style. 
+MyCounter >> increment
+    count := count + 1.
 
-Pharo methods are usually small and readable.
-What rules are common to follow?
-Are there tools that show you violations to such rules?
+MyCounter >> decrement
+    count := count - 1.
 
-Please show code examples that violate some rules.
+MyCounter >> value
+    ^ count.
+```
+### 4) Coding style  
+I also learned about the Pharo coding style. The main idea is to keep methods short and easy to read. Another important detail: class names should start with an uppercase letter, method names with a lowercase, and parameters should also start lowercase.  
 
-_Hint:_ look for the `Pharo with Style` free book.
+Wrong example:  
+```smalltalk
+Client >> Age: AnAge
+    age := AnAge.
+```
 
-## Extras
+Correct example:  
+```smalltalk
+Client >> age: anAge
+    age := anAge.
+```
 
-Can you learn about cascades and block closures?
-How do you approach it?
+These little rules actually make a big difference when reading and sharing code.  
 
-Did you ask questions in the discord channels or mailing lists?
+---
 
-This is extra points ;)
+## Weekly reflection  
+This week I felt like I really started to get into Pharo. At first, everything looked strange. But then it started to make sense.  
 
-## Prepare for next week
+A big discovery for me was the **Ukrainian translation of Stefano Ducasse’s book by Serhii Yaroshko**, my previous teacher at the Lviv National University in Ukraine . Reading examples and explanations in my native language makes the concepts much easier to digest. I will keep using this translation along with the original version.  
 
-Next week we will study the basics of message dispatch.
-The topics are visited in Module 1 of https://advanced-design-mooc.pharo.org/#module1
+I also made my first commit and push on GitHub, and created a fork with the help of another students.  That was a small but motivating step.  
 
-- Watch the videos
-- Read the slides
-- Prepare your questions
+---
+
+## Sources and tools  
+- videos
+- *Pharo by Example* – Stefano Ducasse  
+- Ukrainian translation by Serhii Yaroshko 
+- My GitHub repository: [https://github.com/soniaa28/mycounter.git](https://github.com/soniaa28/mycounter.git)
+
+---
+
