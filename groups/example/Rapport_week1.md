@@ -1,0 +1,131 @@
+# Rapport d'Apprentissage Pharo - Semaine 1
+
+## Partie - Ilyas Ait Ali
+
+### 1. Collections en Pharo et leurs itérateurs
+
+**Qu'est-ce qu'une collection et à quoi sert-elle ?**
+
+Une collection en Pharo est un objet qui permet de stocker et manipuler un groupe d'éléments. Elle sert à organiser des données de manière structurée pour faciliter leur traitement et leur accès.
+
+**Types de collections dans la bibliothèque standard**
+
+Pharo offre une variété de collections dans sa bibliothèque standard :
+
+- **Array** : Collection statique de taille fixe avec accès indexé
+- **OrderedCollection** : Collection dynamique permettant l'insertion/suppression facile
+- **Set** : Collection d'éléments uniques sans ordre particulier
+- **Dictionary** : Collection de paires clé-valeur avec clés uniques
+- **SortedCollection** : Collection triée automatiquement
+
+**Itérateurs disponibles pour parcourir les collections :**
+
+- `do:` : Exécute un bloc pour chaque élément
+- `collect:` : Transforme chaque élément et retourne une nouvelle collection
+- `select:` : Filtre les éléments selon un critère
+- `reject:` : Exclut les éléments selon un critère
+- `detect:` : Trouve le premier élément satisfaisant une condition
+
+**Exemple de code testé :**
+
+```smalltalk
+"Parcours simple avec do:"
+#(16 11 68 19) do: [ :each | Transcript show: each ; cr ].
+
+"Transformation avec collect:"
+#(1 2 3 4) collect: [ :each | each * 2 ]. "Retourne #(2 4 6 8)"
+```
+
+---
+
+### 2. Les conditionnelles en Pharo
+
+Les conditionnelles en Pharo s'écrivent comme des messages envoyés aux objets booléens :
+
+```smalltalk
+"Condition simple avec ifTrue:"
+(5 = 5) ifTrue: [ Transcript show: 'Égal'; cr ].
+```
+
+---
+
+### 3. Création de Classes et Méthodes
+
+J'ai créé une classe `MyCounter` pour comprendre le processus de création :
+
+**Création de la classe :**
+
+```smalltalk
+Object subclass: #MyCounter
+    instanceVariableNames: 'count'
+    classVariableNames: ''
+    package: 'MyPackage'
+```
+
+**Méthodes ajoutées :**
+
+```smalltalk
+"Initialisation"
+initialize
+    count := 0
+
+"Incrémentation"
+increment
+    count := count + 1
+
+"Accès à la valeur"
+value
+    ^ count
+```
+
+**Utilisation :**
+
+```smalltalk
+| counter |
+counter := MyCounter new.
+counter increment.
+counter value "Retourne 1"
+```
+
+**Difficultés rencontrées**
+
+- Adaptation à l'environnement
+- Apprentissage des outils spécifiques (browser de classes, inspecteur, playground)
+- Compréhension du système de packages
+
+---
+
+### 4. Style de Codage en Pharo
+
+Les conventions incluent :
+
+- **Noms significatifs** : Choix de noms simples et explicites
+- **Variables privées** : En minuscules camelCase
+- **Variables partagées** : En majuscules
+- **Éviter les underscores** : Préférer camelCase pour les identifiants
+- **Commentaires pertinents** : Pour expliquer le code complexe ou inhabituel
+- **Alignement cohérent** : Indentation régulière
+
+**Outils de détection des violations**
+
+Pharo inclut des outils d'analyse statique comme :
+
+- **RBScanner** : Détecte les violations de style
+- **Lint** : Identifie les problèmes de qualité de code
+- **Critics** : Signale les mauvaises pratiques
+
+**Exemples de violations de règles**
+
+_Mauvais style :_
+
+```smalltalk
+"Variable avec underscore et nom peu clair"
+my_special_variable
+
+"Trop de parenthèses inutiles"
+^(self calculateTotal * (1 + (tax rate)))
+
+"Méthode trop longue faisant plusieurs choses"
+processData
+    "20 lignes de code avec plusieurs responsabilités"
+```
