@@ -3,7 +3,7 @@
 J'ai terminé le premier TP sur la création de classes et de tests.
 J'ai deux tests qui sont restés en jaune et je n'ai pas compris la raison.
 J'ai qq difficultés à comprendre le fonctionnement de pharo mais je commence à l'apprivoiser petit à petit.
-![tp1gautam](tp1gautam.png)
+![tp1gautam](img/tp1gautam.png)
 
 J'ai lu les pdf, j'ai bien compris le systeme de conditionnel/booleen. La partie heritage lookup/super à l'air plus compliquée bien que je la maitrise en java.
 Je n'ai pas de question particulière pour l'instant.
@@ -12,8 +12,8 @@ Je n'ai pas de question particulière pour l'instant.
 
 J'ai terminé le premier TP sur la création de la classe `Counter` comme vous pouvez le voir sur les captures d'écrans ci-dessous.
 
-![tp1abdelkader-1](tp1abdelkader1.png)
-![tp1abdelkader-2](tp1abdelkader2.png)
+![tp1abdelkader-1](img/tp1abdelkader1.png)
+![tp1abdelkader-2](img/tp1abdelkader2.png)
 
 Ce TP m'a permis de comprendre le fonctionnement de base de Pharo et de son environnement, notamment la création de classes et de méthodes.
 
