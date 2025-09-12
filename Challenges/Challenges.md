@@ -20,6 +20,38 @@ Here are some suggestions
 
 ## Microdown Challenges
 
+
+
 ## Foliage Challenges
 
 ## Myg Challenges
+
+Myg uses the Bloc new graphics library. It is loaded by default in Pharo 14.
+
+You can find resources on Bloc at:
+- https://www.github.com/SquareBracketAssociates/booklet-graphics
+- https://books.pharo.org/booklet-ASimpleMemoryGameInBloc/2024-06-05-ASimpleBlocTutorial.pdf
+
+The project https://github.com/Ducasse/Myg defines several games: Sokoban, Miner, Takuzu.
+The project https://github.com/Ducasse/2023-SameGame/ defines a same game. 
+
+### Sokoban Challenges
+
+- Teleport title. Given two teleport tiles, implement teleport so  that when the player move it, teleports the player to another wrap tile.
+- Counting moves and push. Introduce the display of moves.
+- Numbered Target. Introduce number on the target and make sure that the box should be moved in order on the target.
+- Paired Target/Box. Introduce pairs of target/box where each box can only go on a target. A version can mix paired and unpaired boxes.
+
+
+### Miner Challenges
+
+
+
+### SameGame Challenges
+
+- MultiColor. Introduce a kind of tile that matches all the colors.
+- Cycling colors. The tile will change its color in a circle (red -> blue -> yellow -> red) after each action
+- Kill the line. When clicked, it should eliminate the line.
+- Kill the column. When clicked, it should eliminate the column. 
+
+
