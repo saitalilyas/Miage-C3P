@@ -66,3 +66,69 @@ Ayant une approche tournée vers l'objet il m'as fallut bien comprendre le princ
 
 ## Comment pouvez-vous corriger vos hypothèses et comment avez-vous trouvé cette information ? 
 Mes hypothèses de departs etait au final correct. Seulement cette exercice ma bien fais comprendre la difference entre les objects classqiues en des autres langages et les messages en pharo.
+
+
+
+# Report - Ait ali Ilyas
+
+J’ai commencé par étudier les objets True et False qui héritent de Boolean. J’ai implémenté les méthodes |, or: et not directement dans chaque classe, ce qui m’a permis de comprendre comment le comportement varie selon l’objet.
+
+Ensuite, j’ai travaillé sur les exercices autour du Dice. J’ai créé deux classes principales : Die et DieHandle . Ces exercices m’ont permis de pratiquer l’itération sur des collections, l’utilisation d’opérateurs sur des objets non numériques, et surtout de mettre en place du dispatch pour éviter les conditions et rendre le code plus lisible et extensible.
+
+
+Class {
+	#name : 'Die',
+	#superclass : 'Object',
+	#instVars : [
+		'faces'
+	],
+	#classInstVars : [
+		'aNumber'
+	],
+	#category : 'Dice',
+	#package : 'Dice'
+}
+
+{ #category : 'as yet unclassified' }
+Die class >> withFaces: aNumber [
+	| instance |
+	instance := self new.
+	instance faces: aNumber.
+	^ instance
+]
+
+{ #category : 'as yet unclassified' }
+Die >> faces [
+	^ faces
+]
+
+{ #category : 'accessing' }
+Die >> faces: aNumber [
+	faces := aNumber.
+]
+
+Class {
+	#name : 'DieHandle',
+	#superclass : 'Object',
+	#instVars : [
+		'dice'
+	],
+	#category : 'Dice',
+	#package : 'Dice'
+}
+
+{ #category : 'adding' }
+DieHandle >> + aDieHandle [
+	| newHandle |
+	newHandle := DieHandle new.
+	dice do: [:each | newHandle addDie: each ].
+	aDieHandle dice do: [:each | newHandle addDie: each ].
+	^ newHandle
+]
+
+{ #category : 'adding' }
+DieHandle >> addDie: aDie [ 
+	dice add: aDie.
+]
+
+Ce travail m’a aidé à mieux comprendre les principes de responsabilité des objets.
