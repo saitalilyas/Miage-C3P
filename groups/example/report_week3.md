@@ -1,0 +1,12 @@
+# Report - Alli Rayane
+pour cette semaine, j'ai etablis mes devoirs autour des cours mis a dispostions .
+
+## Objects vs Data
+Cette parite  explique la différence fondamentale entre les objets et les structures de données. Un objet doit être une entité riche en comportements qui encapsule sa propre logique, et non pas un simple conteneur de données. L'exemple comparatif entre les classes Point en Java et en Pharo illustre parfaitement ce concept : en Java, Point se limite essentiellement à des getters/setters, tandis qu'en Pharo, Point propose une interface étendue avec des méthodes comme distanceTo: ou rotateBy: qui embarquent la logique métier. Cela nous montre bien la bonne interpretation du sens objet en pharo.
+ La leçon principale est qu'une bonne API d'objet favorise la réutilisation et évite la duplication de code dans les clients.
+
+## Singleton
+Ce pattern est présenté comme souvent mal compris et mal utilisé. Son intention réelle est de garantir qu'une seule instance d'une classe existe à un moment donné, et non pas simplement de fournir un accès global pratique. Le polycopié souligne les pièges, comme le fait de redéfinir la méthode new, et explique la différence entre uniqueInstance (vrai singleton), default (instance par défaut) et current (instance mutable). Un test acide est proposé : si l'ajout d'une variable d'instance rend le singleton inutile, c'est qu'il était utilisé comme une variable globale déguisée. Les singletons posent également des problèmes pour les tests unitaires, le tous et de savoir leur rendre leur etat d'origine à la fin du test.
+
+##  Decorator
+Ce pattern offre une alternative souple à l'héritage pour ajouter des responsabilités à un objet de manière dynamique. Un décorateur enveloppe un objet le "décoré" et doit implémenter la même interface que lui, permettant une utilisation transparente par le client. L'exemple des flux (Streams) en Pharo montre comment des décorateurs peuvent composer des fonctionnalités (comme la conversion des fins de ligne dans l exemple montré). L'avantage principal est la modularité et la composabilité, mais le pattern exige que tous les décorateurs partagent la même API que l'objet de base et n'est pas adapté si les responsabilités ajoutées nécessitent une interface différente.
