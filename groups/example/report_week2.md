@@ -67,7 +67,7 @@ Ayant une approche tournée vers l'objet il m'as fallut bien comprendre le princ
 ## Comment pouvez-vous corriger vos hypothèses et comment avez-vous trouvé cette information ? 
 Mes hypothèses de departs etait au final correct. Seulement cette exercice ma bien fais comprendre la difference entre les objects classqiues en des autres langages et les messages en pharo.
 
-
+PS le lien de mon tp dice : https://github.com/MWB21223/C3P-dice.git
 
 # Report - Ait ali Ilyas
 
@@ -130,5 +130,6 @@ DieHandle >> + aDieHandle [
 DieHandle >> addDie: aDie [ 
 	dice add: aDie.
 ]
+
 
 Ce travail m’a aidé à mieux comprendre les principes de responsabilité des objets.
