@@ -1,6 +1,5 @@
 # Report - Alli Rayane
-pour cette semaine, j'ai etablis mes devoirs autour des cours mis a dispostions .
-
+pour cette semaine, j'ai etablis mes devoirs autour des cours mis a dispostions et du KATA debuté en classe.
 ## Objects vs Data
 Cette parite  explique la différence fondamentale entre les objets et les structures de données. Un objet doit être une entité riche en comportements qui encapsule sa propre logique, et non pas un simple conteneur de données. L'exemple comparatif entre les classes Point en Java et en Pharo illustre parfaitement ce concept : en Java, Point se limite essentiellement à des getters/setters, tandis qu'en Pharo, Point propose une interface étendue avec des méthodes comme distanceTo: ou rotateBy: qui embarquent la logique métier. Cela nous montre bien la bonne interpretation du sens objet en pharo.
  La leçon principale est qu'une bonne API d'objet favorise la réutilisation et évite la duplication de code dans les clients.
@@ -12,6 +11,14 @@ Ce pattern est présenté comme souvent mal compris et mal utilisé. Son intenti
 
 Ce pattern offre une alternative souple à l'héritage pour ajouter des responsabilités à un objet de manière dynamique. Un décorateur enveloppe un objet le "décoré" et doit implémenter la même interface que lui, permettant une utilisation transparente par le client. L'exemple des flux (Streams) en Pharo montre comment des décorateurs peuvent composer des fonctionnalités (comme la conversion des fins de ligne dans l exemple montré). L'avantage principal est la modularité et la composabilité, mais le pattern exige que tous les décorateurs partagent la même API que l'objet de base et n'est pas adapté si les responsabilités ajoutées nécessitent une interface différente.
 
+## kata 
+pour ce qui du kata il ma semblé intuitif de modifié l'initialize qui usé d'un super bien que notre classe Roover n'a pas de classe parents donc de variable a herité:
+
+![alt text](image.png)
+
+apres parcours de notre class j'ai pus observé qu'il nous manqué un test afin de s'assurer de la delimitation de notre grille d'où le test suivant: 
+
+![alt text](image-1.png)
 
 # Report - Ait ali Ilyas
 
