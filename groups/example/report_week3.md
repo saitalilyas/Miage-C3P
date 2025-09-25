@@ -14,11 +14,12 @@ Ce pattern offre une alternative souple à l'héritage pour ajouter des responsa
 ## kata 
 pour ce qui du kata il ma semblé intuitif de modifié l'initialize qui usé d'un super bien que notre classe Roover n'a pas de classe parents donc de variable a herité:
 
-![alt text](image.png)
+<img width="286" height="192" alt="image" src="https://github.com/user-attachments/assets/8fb4088a-5167-468a-85bd-bbc67f447c2c" />
 
 apres parcours de notre class j'ai pus observé qu'il nous manqué un test afin de s'assurer de la delimitation de notre grille d'où le test suivant: 
 
-![alt text](image-1.png)
+<img width="310" height="151" alt="image" src="https://github.com/user-attachments/assets/04e0846e-9a62-4323-bac4-ce2de1303fd4" />
+
 
 # Report - Ait ali Ilyas
 
@@ -39,5 +40,6 @@ Pour m'assurer que ma modification fonctionnait correctement, j'ai un testé le 
 ## Module : hooks
 
 J'ai ensuite regardé les vidéos du module sur les patrons de conception et les hooks. Les vidéos m'on ptermis de mieux comprender le princpipe et le templates associès.
+
 
 
