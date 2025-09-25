@@ -22,9 +22,12 @@ J'ai modifié le programme du roover pour qu'il ne puisse plus sortir de la gril
 
 Ce changement était important car il empêche le rover de se perdre en dehors de la zone de communication. Quand le rover tente d'aller trop loin, je le fais rester sur place au lieu de sortir de la grille.
 
+![Capture](Screen/PharoScreenshot.png)
+
 Pour m'assurer que ma modification fonctionnait correctement, j'ai un testé le cas où le rover essaie de sortir par le bord gauche de la grille. Grâce à cela, j'ai pu confirmer que le rover reste bien bloqué au bord au lieu de disparaître hors de la zone sécurisée.
 
  j'ai ajouté une vérification dans la méthode move qui contrôle les coordonnées avant de les mettre à jour. Cette amélioration rend le rover plus fiable et mes tests me permettent de vérifier en permanence que tout fonctionne comme prévu.
+
 
 ## Module : hooks
 
