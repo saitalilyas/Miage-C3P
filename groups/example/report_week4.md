@@ -8,17 +8,14 @@ il y avais de nombreuses amelioration disponible pour notre roover mais j'ai tro
 
 ici la methode back :
 ```
-![alt text](image.png)
 
 ```
 puis la redefinition dans notre classe mere  et dans ses classes filles, exemple ici avec North: 
 ```
-![alt text](image-1.png)
 
 ```
 maintenant il ne nous reste plus qu'a adaptée notre interpretDirection pour que notre methode soit reconnu:
 ```
-![alt text](image-2.png)
 
 
 ## reverse engineering 
