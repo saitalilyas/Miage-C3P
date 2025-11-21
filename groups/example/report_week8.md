@@ -4,3 +4,8 @@
 
 
 En étudiant tout ça, j’ai revu l’importance des design patterns et du polymorphisme, comme on l’avait fait en cours avec l’éditeur  et les exercices. Cela m’aide à mieux comprendre pourquoi ces concepts rendent un projet plus clair et plus facile à maintenir.
+
+
+
+# Alli Rayane 
+ j'ai commencé l'analyse de notre projet SameGame avant de pouvoir commencé l implementation de de ce dernier. Il etait ici question de se familiarsier avec les differentes restrcition comme poru la grille et la comprehension de l'architecture.Reperée les differents parten utilisé nottament celui pour les couleur ou il y aura forcement des possiblité d'amelioration. 
